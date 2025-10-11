@@ -1,0 +1,61 @@
+import React from 'react'
+import Image from 'next/image'
+import { Button } from '@/components/ui/button'
+
+import europeimage from '../../../../../../public/work_visa_image/EU_bg.png'
+import flagimage from '../../../../../../public/work_visa_image/avstriaya.jpg'
+
+export default function Visa_available_country() {
+  return (
+    <div className='bg-[#8777FD] w-full py-10 px-20 relative'>
+      {/* section 1 */}
+      <div className='grid grid-cols-2 items-center gap-10'>
+        {/* left side */}
+        <div className='px-10 relative  left-40'>
+          <div className='bg-[#3739E0] py-5 rounded-2xl text-center'>
+            <h3 className='text-white font-bold text-5xl'>Страны Евросоюза</h3>
+          </div>
+        </div>
+
+        {/* right side */}
+        <div>
+          <Image
+            src={europeimage}
+            alt='Europe Background'
+            className='h-72 w-full rounded-3xl object-cover'
+          />
+        </div>
+      </div>
+
+      {/* section 2 */}
+      <div className='mt-10'>
+        {/* text section */}
+        <h1 className='text-2xl font-semibold text-[#02059E] border-b-2 border-[#02059E] pb-2'>
+          Conditions for obtaining a work visa in the EU countries:
+        </h1>
+
+        {/* flag grid */}
+        <div className='grid grid-cols-6 py-6 gap-x-5 gap-y-7'>
+          {Array(10)
+            .fill(0)
+            .map((_, index) => (
+              <div key={index}>
+                <div>
+                  <Image
+                    src={flagimage}
+                    alt='Country flag'
+                    className='h-40 w-40 rounded-full object-cover mx-auto'
+                  />
+                </div>
+                <div className='border-b-2 border-[#727272] pb-2 mt-2'>
+                  <Button className='bg-white text-xl font-semibold text-black w-full'>
+                    Austria
+                  </Button>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
+    </div>
+  )
+}
