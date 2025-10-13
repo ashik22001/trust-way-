@@ -20,7 +20,7 @@ export default function FAQ_section() {
 
       {/* accodion section */}
 
-      <div className=' px-20'>
+      <div className=' px-5 md:px-10 lg:px-20 pb-10'>
         <Accordion
           type="single"
           collapsible

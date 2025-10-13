@@ -8,7 +8,7 @@ export default function Time_banner_Section() {
         <div>
             {/* header text section */}
             <div>
-                <h1 className=' text-xl font-[600] text-center text-black  px-16 pb-5'>
+                <h1 className=' text-xl font-[600] text-center text-black px-5 md:px-10 lg:px-16 pb-5'>
                     With Endless Horizons, your path to a successful career and life in Europe will become easier, faster and more comfortable.
                     We strive to ensure that each of our clients can fulfill their plans and dreams,
                     receiving maximum support and professionalism at every stage.
@@ -21,7 +21,7 @@ export default function Time_banner_Section() {
             <div className="bg-[url(/images/original.webp)]  w-full bg-cover bg-center">
                 {/* text section */}
                 <div className=' py-5'>
-                    <h1 className=' text-3xl font-[600] text-center text-white  px-16 pb-2 pt-6'>
+                    <h1 className=' text-3xl font-[600] text-center text-white px-5 md:px-10 lg:px-16 pb-2 pt-6'>
                         Our team works around the clock!
                     </h1>
                     <p className=' text-xl font-[400] text-center text-white  px-16 pb-5'>
@@ -34,7 +34,7 @@ export default function Time_banner_Section() {
                     <Image
                         src={timeimage}
                         alt="Megh cloud"
-                        className="h-80 w-80 rounded-2xl  "
+                        className=" h-72 md:h-80 w-72 md:w-80 rounded-2xl  "
                     />
 
                 </div>

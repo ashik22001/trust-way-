@@ -11,12 +11,12 @@ export default function Works_Image_Card() {
             {/* header text  */}
 
             <div>
-                <h1 className=' text-3xl font-bold text-white py-5 text-center uppercase'>General vacancies for all countries:</h1>
+                <h1 className=' text-3xl font-bold text-white py-5 text-center uppercase px-5 md:px-10 lg:px-0'>General vacancies for all countries:</h1>
             </div>
 
             {/* card section */}
 
-            <div className=' px-40 grid grid-cols-3 gap-5 '>
+            <div className=' px-5 md:px-10 xl:px-40 grid md:grid-cols-2  lg:grid-cols-3 gap-5 '>
                 {/* card */}
 
                 <div className=' h-[280px] w-full col-span-1 border-2 border-gray-500 rounded-md'>

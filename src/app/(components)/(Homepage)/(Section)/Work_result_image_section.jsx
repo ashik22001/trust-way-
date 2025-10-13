@@ -36,20 +36,55 @@ export default function Work_result_image_section() {
 
             {/* swiper slider section */}
 
-            <div className=' pb-3 my-5 gap-y-5 border-b-2 border-[#DADADA] pb-10'>
+            <div className='  my-5 gap-y-5 border-b-2 border-[#DADADA] pb-10'>
                 {/* Custom Navigation Buttons */}
 
 
                 <Swiper
-                    slidesPerView={5}
-                    spaceBetween={10}
+                    
+
+                    breakpoints={{
+
+                        
+
+                         // if width is 640px
+
+                        640: {
+                            slidesPerView:2,
+                            spaceBetween:10
+                        },
+
+                         // if width is 768px
+
+                        768: {
+                            slidesPerView:3,
+                            spaceBetween:10
+                        },
+
+                         // if width is 1024px
+
+                        1024: {
+                            slidesPerView:3,
+                            spaceBetween:10
+                        },
+
+                         // if width is 1440px
+
+                        1440: {
+                            slidesPerView:4,
+                            spaceBetween:10
+                        },
+
+
+
+                    }}
                     pagination={{
                         clickable: true,
                     }}
                     autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
 
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper mt-10 "
@@ -57,7 +92,7 @@ export default function Work_result_image_section() {
                         nextEl: ".swiper-button-next-custom",
                         prevEl: ".swiper-button-prev-custom",
                     }}
-                    
+
                 >
                     <SwiperSlide>
                         <div className=''>
@@ -125,7 +160,7 @@ export default function Work_result_image_section() {
 
                         </div>
                     </SwiperSlide>
-                     <SwiperSlide>
+                    <SwiperSlide>
                         <div className=''>
                             <Image
                                 src={passportimage}
@@ -136,7 +171,7 @@ export default function Work_result_image_section() {
 
                         </div>
                     </SwiperSlide>
-                     <SwiperSlide>
+                    <SwiperSlide>
                         <div className=''>
                             <Image
                                 src={passportimage}
@@ -147,7 +182,7 @@ export default function Work_result_image_section() {
 
                         </div>
                     </SwiperSlide>
-                     <SwiperSlide>
+                    <SwiperSlide>
                         <div className=''>
                             <Image
                                 src={passportimage}
@@ -158,7 +193,7 @@ export default function Work_result_image_section() {
 
                         </div>
                     </SwiperSlide>
-                     <SwiperSlide>
+                    <SwiperSlide>
                         <div className=''>
                             <Image
                                 src={passportimage}
@@ -169,7 +204,7 @@ export default function Work_result_image_section() {
 
                         </div>
                     </SwiperSlide>
-                     <SwiperSlide>
+                    <SwiperSlide>
                         <div className=''>
                             <Image
                                 src={passportimage}
@@ -180,9 +215,6 @@ export default function Work_result_image_section() {
 
                         </div>
                     </SwiperSlide>
-                    
-                    
-
                 </Swiper>
             </div>
 
