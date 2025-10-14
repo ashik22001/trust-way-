@@ -23,20 +23,56 @@ export default function Popular_Place_Swiper() {
             {/* header text  */}
 
             <div>
-                <h3 className=' text-3xl font-semibold text-center pt-6 uppercase text-white '>Popular destinations to make your dream come true</h3>
+                <h3 className=' px-3 text-2xl md:text-3xl font-bold md:font-semibold text-center pt-6 uppercase text-white '>Popular destinations to make your dream come true</h3>
                 <h5 className=' text-[16px] font-normal pt-2 text-center text-white '>Live in the city of your dreams. Build your career in more than 28 countries.</h5>
             </div>
 
             {/* carusel section  */}
 
-            <div className=' py-10 px-20'>
+            <div className=' py-10 px-5 md:px-10 lg:px-20'>
                 <Swiper
-                    slidesPerView={3}
-                    spaceBetween={10}
+                    
                     freeMode={true}
                     pagination={{
                         clickable: true,
                     }}
+
+                    breakpoints={{
+
+                        
+
+                         // if width is 640px
+
+                        640: {
+                            slidesPerView:1,
+                            spaceBetween:10
+                        },
+
+                         // if width is 768px
+
+                        768: {
+                            slidesPerView:2,
+                            spaceBetween:10
+                        },
+
+                         // if width is 1024px
+
+                        1024: {
+                            slidesPerView:3,
+                            spaceBetween:10
+                        },
+
+                         // if width is 1440px
+
+                        1440: {
+                            slidesPerView:3,
+                            spaceBetween:10
+                        },
+
+
+
+                    }}
+
                     modules={[FreeMode, Pagination, Navigation,Autoplay ]}
                     className="mySwiper"
                     autoplay={{

@@ -26,13 +26,13 @@ export default function Banner_Video() {
         <Image
         src={logo}
 
-        className=' h-40 w-80 pb-4'
+        className=' h-32 w-72 md:h-40 md:w-80 pb-4'
         
         >
 
         </Image>
-        <h1 className="text-3xl font-bold mb-4">WE CAN HELP YOU GET AN EDUCATION IN ANY COUNTRY!</h1>
-        <p className="text-lg font-semibold max-w-2xl">
+        <h1 className=" text-xl md:text-3xl font-bold mb-4">WE CAN HELP YOU GET AN EDUCATION IN ANY COUNTRY!</h1>
+        <p className=" text-[16px] md:text-lg font-semibold max-w-2xl">
          We exist to find clarity in the chaos of the increasingly complex landscape of overseas education.
 
         </p>

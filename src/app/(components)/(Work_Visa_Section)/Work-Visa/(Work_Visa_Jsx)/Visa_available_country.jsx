@@ -13,10 +13,8 @@ export default function Visa_available_country() {
         <div className=' grid grid-cols-12 items-center gap-0 lg:gap-10'>
         {/* left side */}
         <div className='px-0 lg:px-10 relative left-20 lg:left-40 w-full md:col-span-4 lg:col-span-6'>
-          <div className='bg-[#3739E0] py-5 rounded-2xl text-center w-full'>
-            <h3 className='text-white font-bold text-5xl'>Страны Евросоюза</h3>
-          </div>
-        </div>
+            <h3 className='text-white font-bold text-5xl bg-[#3739E0] py-5 rounded-2xl text-center w-full'>Страны Евросоюза</h3>
+        </div> 
 
         {/* right side */}
         <div className='md:col-span-8 lg:col-span-6'>

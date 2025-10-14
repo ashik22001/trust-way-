@@ -17,7 +17,7 @@ export default function Work_Visa_Footer() {
 
             <div className='bg-[#150047]'>
             {/* footer  part 1 */}
-            <div className='   grid grid-cols-2 px-[10%] py-5 border-b-2 border-[#8A80A3]'>
+            <div className='   grid md:grid-cols-2 px-[10%] py-5 border-b-2 border-[#8A80A3]'>
 
                 {/* left site  */}
                 <div className=' col-span-1'>
@@ -74,7 +74,7 @@ export default function Work_Visa_Footer() {
                 {/* right site  */}
 
                 <div className=' col-span-1'>
-                    <div className=' flex flex-col items-center justify-center py-5 space-y-1'>
+                    <div className=' flex flex-col items-center justify-center py-5 space-y-1 mt-10 md:mt-0'>
                         <div className='  items-center gap-x-2'>
                             
                             <h4 className=' text-lg text-white'>Work in the EU</h4>
@@ -121,7 +121,7 @@ export default function Work_Visa_Footer() {
             {/* footer part 2 */}
 
             <div className=' px-20'>
-                <ul className=' flex items-center justify-center py-3 gap-x-5 '>
+                <ul className=' md:flex items-center justify-center py-3 gap-x-5 '>
                     <li className=' text-white text-lg font-normal '>Главная страница</li>
                     <li className=' text-white text-lg font-normal '>Туристические визы</li>
                     <li className=' text-white text-lg font-normal '>Главная страница</li>

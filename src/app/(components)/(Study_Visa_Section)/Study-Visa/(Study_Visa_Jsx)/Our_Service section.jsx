@@ -11,7 +11,7 @@ export default function Our_Service_section() {
 
             {/* card section  */}
 
-            <div className=' px-[10%] grid grid-cols-3 gap-x-5'>
+            <div className=' px-5 md:px-[10%] grid  lg:grid-cols-3 gap-x-5 gap-y-5'>
                 <div className=' bg-white rounded-2xl shadow-lg shadow-gray-500 '>
                     <h3 className='text-center font-bold text-2xl text-[#110078] pt-3'>Consultation on studying abroad </h3>
                     <p className=' text-lg py-5 px-6 text-center'>

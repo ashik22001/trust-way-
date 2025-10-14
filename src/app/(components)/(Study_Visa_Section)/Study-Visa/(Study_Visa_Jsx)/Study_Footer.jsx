@@ -17,7 +17,7 @@ export default function Study_Footer() {
 
             <div className='bg-[#150047]'>
                 {/* footer  part 1 */}
-                <div className='   grid grid-cols-5 px-20 py-5 border-b-2 border-[#8A80A3] gap-x-10'>
+                <div className='   grid md:grid-cols-4 lg:grid-cols-5 px-5 md:px-10 lg:px-14 xl:px-20 py-5 border-b-2 border-[#8A80A3] gap-x-10'>
 
                     {/* col 1  */}
                     <div className=' col-span-1'>
@@ -236,8 +236,8 @@ export default function Study_Footer() {
 
                 {/* footer part 2 */}
 
-                <div className=' px-20'>
-                    <ul className=' flex items-center justify-center py-3 gap-x-5 '>
+                <div className=' px-5 md:px-10 lg:px-14 xl:px-20'>
+                    <ul className=' md:flex items-center justify-center py-3 gap-x-5 text-center'>
                         <li className=' text-white text-lg font-normal '>Главная страница</li>
                         <li className=' text-white text-lg font-normal '>Туристические визы</li>
                         <li className=' text-white text-lg font-normal '>Главная страница</li>

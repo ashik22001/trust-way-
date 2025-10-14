@@ -15,7 +15,7 @@ import Home_Footer from "./(components)/(Homepage)/Home_Footer";
 export default function Home() {
   return (
    <div>
-    {/* <Navbar></Navbar> */}
+    <Navbar></Navbar>
     <Banner_section_1></Banner_section_1>
     <Banner_section_2></Banner_section_2>
     <Banner_section_3></Banner_section_3>
@@ -25,7 +25,7 @@ export default function Home() {
     <Time_banner_Section></Time_banner_Section>
     <Our_partner_section></Our_partner_section>
     <FAQ_section></FAQ_section>
-    {/* <Home_Footer></Home_Footer> */}
+    <Home_Footer></Home_Footer>
    </div>
   );
 }

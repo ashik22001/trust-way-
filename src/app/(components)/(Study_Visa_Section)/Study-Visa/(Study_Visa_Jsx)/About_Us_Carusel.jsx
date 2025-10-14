@@ -24,13 +24,13 @@ export default function About_Us_Carusel() {
             {/* header text  */}
 
             <div>
-                <h3 className=' text-3xl font-semibold text-center pt-6 uppercase text-white '>What they say about us</h3>
-                <h5 className=' text-[16px] font-normal pt-2 text-center text-white '>Live in the city of your dreams. Build your career in more than 28 countries.</h5>
+                <h3 className='text-2xl md:text-3xl font-semibold text-center pt-6 uppercase text-white '>What they say about us</h3>
+                <h5 className=' text-sm md:text-[16px] font-normal pt-2 text-center text-white '>Live in the city of your dreams. Build your career in more than 28 countries.</h5>
             </div>
 
             {/* carusel section  */}
 
-            <div className=' py-10 px-40'>
+            <div className=' py-10 px-5 md:px-10  lg:px-40'>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={10}
