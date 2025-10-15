@@ -21,7 +21,7 @@ export default function Work_Navbar() {
                 <div className='bg-black text-white px-5 md:flex md:items-center md:justify-between'>
                     <div>
                         <ul className='gap-x-3 py-4 flex'> 
-                            <li className='text-[16px] font-semibold border-r-2 border-white px-3'>+48534207363</li>
+                            <li className='text-[16px] font-semibold border-r-2 border-white px-3'>+8801712347288</li>
                             <li className='text-[16px] font-semibold border-r-2 border-white px-3'>info@endlesshorizons.pl</li>
                             <li className='text-[16px] font-semibold px-3 hidden lg:block'>Thanks to those we helped</li>
                         </ul>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import flag from '../../../../../public/images/flag_flagshtok.webp'
+import flag from '../../../../../public/images/flag.png'
 import Image from 'next/image'
 
 
@@ -33,16 +33,20 @@ export default function Banner_section_3() {
                                 <h5 className='text-[16px] md:text-sm lg:text-lg'>Our team has in-depth knowledge and many years of experience in the field of visa and immigration services.</h5>
                             </div>
                             <div className='bg-white rounded-2xl px-4 py-2'>
-                                <h3 className='text-xl md:text-[16px] lg:text-xl font-semibold'>Professionalism and Experience:</h3>
-                                <h5 className='text-[16px] md:text-sm lg:text-lg'>Our team has in-depth knowledge and many years of experience in the field of visa and immigration services.</h5>
+                                <h3 className='text-xl md:text-[16px] lg:text-xl font-semibold'>Individual approach:</h3>
+                                <h5 className='text-[16px] md:text-sm lg:text-lg'>We take into account all the characteristics and needs of each client, providing personalized service.</h5>
                             </div>
                             <div className='bg-white rounded-2xl px-4 py-2'>
-                                <h3 className='text-xl md:text-[16px] lg:text-xl font-semibold'>Professionalism and Experience:</h3>
-                                <h5 className='text-[16px] md:text-sm lg:text-lg'>Our team has in-depth knowledge and many years of experience in the field of visa and immigration services.</h5>
+                                <h3 className='text-xl md:text-[16px] lg:text-xl font-semibold'>Comprehensive service:</h3>
+                                <h5 className='text-[16px] md:text-sm lg:text-lg'>We offer a full range of services, which allows you to resolve all issues related to visas and employment in the EU in one place.</h5>
                             </div>
                             <div className='bg-white rounded-2xl px-4 py-2'>
-                                <h3 className='text-xl md:text-[16px] lg:text-xl font-semibold'>Professionalism and Experience:</h3>
-                                <h5 className='text-[16px] md:text-sm lg:text-lg'>Our team has in-depth knowledge and many years of experience in the field of visa and immigration services.</h5>
+                                <h3 className='text-xl md:text-[16px] lg:text-xl font-semibold'>Partnership with employers:</h3>
+                                <h5 className='text-[16px] md:text-sm lg:text-lg'>We cooperate with proven and reliable employers throughout Europe, which guarantees our clients access to the best vacancies.</h5>
+                            </div>
+                            <div className='bg-white rounded-2xl px-4 py-2'>
+                                <h3 className='text-xl md:text-[16px] lg:text-xl font-semibold'>Support at all stages:</h3>
+                                <h5 className='text-[16px] md:text-sm lg:text-lg'>We provide full support to the client from the first consultation to obtaining a visa or employment.</h5>
                             </div>
                             
                              

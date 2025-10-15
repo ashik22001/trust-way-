@@ -10,7 +10,7 @@ export default function Banner_section_2() {
       {/* text section div */}
       <div className="py-4 bg-white text-center leading-8 absolute top-0 left-0 w-full z-20">
         <h3 className=" text-sm  md:text-xl lg:text-2xl font-semibold px-5 md:px-10 text-[#010053]">
-          Endless Horizons is a leading consulting company providing a full range of visa services and employment in the countries of the European Union.
+          Trust Way Global is a leading consulting company providing a full range of visa services and employment in the countries of the European Union.
         </h3>
       </div>
 

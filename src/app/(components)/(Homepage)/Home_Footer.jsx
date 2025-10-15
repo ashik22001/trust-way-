@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from '../../../../public/images/helloworldl.jpg'
+import logo from '../../../../public/images/trust_logo.png'
 import Image from 'next/image'
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
@@ -43,7 +43,7 @@ export default function Home_Footer() {
                         </div>
 
                         <div className=' text-lg  w-full text-white font-semibold'>
-                            info@endlesshorizons.pl
+                            
                         </div>
                     </div>
                     {/* contact section */}
@@ -53,7 +53,7 @@ export default function Home_Footer() {
                         </div>
 
                         <div className=' text-lg  w-full text-white font-semibold'>
-                            +48 730 066 711
+                            +8801712347288
                         </div>
 
                     </div>
@@ -91,7 +91,7 @@ export default function Home_Footer() {
                         </div>
 
                         <div className=' text-lg  w-full text-white font-semibold'>
-                            al. Jana Pawła II 11, 00-823 Warszawa, Poland
+                            3rd Floor D3, House:15, Road:07, Gulshan-1, Gulshan Dhaka,Bangladesh
 
                         </div>
                     </div>
@@ -102,7 +102,7 @@ export default function Home_Footer() {
                         </div>
 
                         <div className=' text-lg  w-full text-white  font-semibold'>
-                            Monday - Friday
+                            Saturday - Thursday
                             10:00 - 17:00
                         </div>
                     </div>
@@ -115,13 +115,13 @@ export default function Home_Footer() {
 
 
                 <ul className=' flex items-center justify-center gap-x-5'>
-                    <li className=' text-[17px] font-semibold text-white'>hello world</li>
-                    <li className=' text-[17px] font-semibold text-white'>hello world</li>
-                    <li className=' text-[17px] font-semibold text-white'>hello world</li>
-                    <li className=' text-[17px] font-semibold text-white'>hello world</li>
-                    <li className=' text-[17px] font-semibold text-white'>hello world</li>
-                    <li className=' text-[17px] font-semibold text-white'>hello world</li>
-                    <li className=' text-[17px] font-semibold text-white'>hello world</li>
+                    <li className=' text-[17px] font-semibold text-white'>Home</li>
+                    <li className=' text-[17px] font-semibold text-white'>Work Visas</li>
+                    <li className=' text-[17px] font-semibold text-white'>Tourist Visas</li>
+                    <li className=' text-[17px] font-semibold text-white'>Student Visas</li>
+                    <li className=' text-[17px] font-semibold text-white'>VFS Global</li>
+                    <li className=' text-[17px] font-semibold text-white'>Visas for Belarus</li>
+                
                 </ul>
 
             </div>
@@ -132,9 +132,7 @@ export default function Home_Footer() {
 
 
                 <h5 className='text-[16px] font-semibold text-white text-center'>
-                    Endless Horizons | © 2024. All rights reserved.
-                    <br />
-                    Developer by astapov.by
+                    Trust Way Global
                 </h5>
 
             </div>
