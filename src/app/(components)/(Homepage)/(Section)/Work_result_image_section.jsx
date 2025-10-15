@@ -64,7 +64,7 @@ export default function Work_result_image_section() {
                          // if width is 1024px
 
                         1024: {
-                            slidesPerView:3,
+                            slidesPerView:4,
                             spaceBetween:10
                         },
 

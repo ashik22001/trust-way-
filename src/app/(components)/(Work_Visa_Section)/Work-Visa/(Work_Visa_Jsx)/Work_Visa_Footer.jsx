@@ -8,6 +8,7 @@ import { MdEmail } from "react-icons/md";
 
 
 import { FaWhatsappSquare } from "react-icons/fa";
+import Link from 'next/link';
 
 
 export default function Work_Visa_Footer() {
@@ -32,7 +33,7 @@ export default function Work_Visa_Footer() {
 
                         </Image>
                     </div>
-                    <h5 className=' text-[16px] font-semibold text-white text-center px-[10%]' >Endless Horizons — Ваш надежный консультант по работе за рубежом.</h5>
+                    <h5 className=' text-[16px] font-semibold text-white text-center px-[10%]' >Trust Way Global is your trusted consultant for working abroad.</h5>
 
                     {/* phone number section  */}
                     <div className=' flex flex-col items-center justify-center py-5 space-y-1'>
@@ -40,19 +41,25 @@ export default function Work_Visa_Footer() {
                             <span>
                                 <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                             </span>
-                            <h4 className=' text-lg text-white'>+48534207363</h4>
+                            <h4 className=' text-lg text-white'>+8801624254327</h4>
                         </div>
                         <div className=' flex items-center gap-x-2'>
                             <span>
-                                <span > <FaSquarePhone className='text-xl text-white' /></span>
+                                <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                             </span>
-                            <h4 className=' text-lg text-white'>+48534207363</h4>
+                            <h4 className=' text-lg text-white'>+8801624254324</h4>
                         </div>
                         <div className=' flex items-center gap-x-2'>
                             <span>
-                                <span > <FaPhoneVolume className='text-xl text-white' /></span>
+                                <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                             </span>
-                            <h4 className=' text-lg text-white'>+48534207363</h4>
+                            <h4 className=' text-lg text-white'>+8801624254324</h4>
+                        </div>
+                        <div className=' flex items-center gap-x-2'>
+                            <span>
+                                <span > <FaWhatsappSquare className='text-xl text-white' /></span>
+                            </span>
+                            <h4 className=' text-lg text-white'>+8801712347288</h4>
                         </div>
                         <div className=' flex items-center gap-x-2'>
                             <span>
@@ -60,20 +67,21 @@ export default function Work_Visa_Footer() {
                             </span>
                             <h4 className=' text-lg text-white'>trustwayglobal@gmail.com</h4>
                         </div>
+                         
                     </div>
 
                     {/* location section  */}
 
                     <div>
                         <p className=' text-lg font-semibold text-white text-center'>Location : </p>
-                        <p className=' text-lg font-semibold text-white text-center'>al. Jana Pawła II 11, 00-823 Warszawa, Poland </p>
+                        <p className=' text-lg font-semibold text-white text-center'> 3rd Floor D3, House:15, Road:07, Gulshan-1, Gulshan Dhaka,Bangladesh  </p>
 
                     </div>
                 </div>
 
                 {/* right site  */}
 
-                <div className=' col-span-1'>
+                <div className=' col-span-1 mt-16'>
                     <div className=' flex flex-col items-center justify-center py-5 space-y-1 mt-10 md:mt-0'>
                         <div className='  items-center gap-x-2'>
                             
@@ -122,11 +130,14 @@ export default function Work_Visa_Footer() {
 
             <div className=' px-20'>
                 <ul className=' md:flex items-center justify-center py-3 gap-x-5 '>
-                    <li className=' text-white text-lg font-normal '>Главная страница</li>
-                    <li className=' text-white text-lg font-normal '>Туристические визы</li>
-                    <li className=' text-white text-lg font-normal '>Главная страница</li>
-                    <li className=' text-white text-lg font-normal '>Туристические визы</li>
-                    <li className=' text-white text-lg font-normal '>Главная страница</li>
+                    <li className=' text-white text-lg font-normal '>
+                        <Link href="/">Home</Link>
+                    </li>
+                    <li className=' text-white text-lg font-normal '>Work Visas</li>
+                    <li className=' text-white text-lg font-normal '>Tourist Visas</li>
+                    <li className=' text-white text-lg font-normal '>Student Visas</li>
+                    <li className=' text-white text-lg font-normal '>VFS Global</li>
+                    <li className=' text-white text-lg font-normal '>Visas for Belarus</li>
 
                 </ul>
             </div>
@@ -135,8 +146,7 @@ export default function Work_Visa_Footer() {
         {/* footer second section  */}
 
         <div className=' bg-black  px-[15%] py-8'>
-<p className=' text-center text-white text-lg '>Endless Horizons | © 2024. Все права защищены.
-Developer by astapov.by</p>
+<p className=' text-center text-white text-lg '>Trust Way Global </p>
         </div>
         </div>
     )
