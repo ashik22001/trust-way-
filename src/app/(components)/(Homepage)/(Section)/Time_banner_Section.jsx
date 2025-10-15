@@ -9,7 +9,7 @@ export default function Time_banner_Section() {
             {/* header text section */}
             <div>
                 <h1 className=' text-xl font-[600] text-center text-black px-5 md:px-10 lg:px-16 pb-5'>
-                    With Endless Horizons, your path to a successful career and life in Europe will become easier, faster and more comfortable.
+                    With Trust Way Global, your path to a successful career and life in Europe will become easier, faster and more comfortable.
                     We strive to ensure that each of our clients can fulfill their plans and dreams,
                     receiving maximum support and professionalism at every stage.
                 </h1>
