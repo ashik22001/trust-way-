@@ -110,7 +110,7 @@ export default function Country_Place() {
 
                     {/* text section */}
                     <div className=' px-5 bg-[#0D6B0D] py-1 mt-2 rounded-xl'>
-                        <h4 className='text-[16px] md:text-lg lg:text-xl font-semibold text-center text-white '>Информация по предоставлению временно отсутствует. пожалуйста напишите нам, для дальнейшей консультации.</h4>
+                        <h4 className='text-[16px] md:text-lg lg:text-xl font-semibold text-center text-white '> по предоставлению временно отсутствует. пожалуйста напишите нам, для дальнейшей консультации.</h4>
                     </div>
 
                     {/* text section  */}
