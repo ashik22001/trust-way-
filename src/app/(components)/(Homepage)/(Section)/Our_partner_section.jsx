@@ -1,6 +1,13 @@
 import React from 'react'
 
 import partnerlogo from '../../../../../public/images/partner-1.webp'
+import partnerlogo from '../../../../../public/images/partner-2.webp'
+import partnerlogo from '../../../../../public/images/partner-3.webp'
+import partnerlogo from '../../../../../public/images/partner-4.webp'
+import partnerlogo from '../../../../../public/images/partner-5.webp'
+import partnerlogo from '../../../../../public/images/logo_tranelonejov.webp'
+import partnerlogo from '../../../../../public/images/Morta_partner.webp'
+
 import Image from 'next/image'
 
 export default function Our_partner_section() {
