@@ -113,6 +113,9 @@ function Deshboard_Menu() {
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
                 <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Countrys Popular Place Section</Link>
               </li>
+              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Countrys Popular Place Section</Link>
+              </li>
 
 
             </ul>
