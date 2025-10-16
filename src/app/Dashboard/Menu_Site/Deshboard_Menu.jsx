@@ -5,17 +5,9 @@ import { usePathname } from 'next/navigation';
 
 import { FaHome, FaUsers, FaNetworkWired, FaNewspaper, FaProjectDiagram, FaWpforms, FaList, FaRegListAlt, FaThList, FaParachuteBox } from "react-icons/fa";
 import { MdBroadcastOnHome, MdMedicalServices, MdOutlineMiscellaneousServices, MdMiscellaneousServices, MdCategory, MdFolderShared, MdContactPhone } from "react-icons/md";
-import { GiLifeBar, GiNewspaper, GiChoice } from "react-icons/gi";
-import { VscServerProcess } from "react-icons/vsc";
-import { TbArrowRoundaboutRight } from "react-icons/tb";
-import { IoIosArrowDown } from "react-icons/io";
-import { BiCategory } from "react-icons/bi";
-import { FaFileWaveform } from 'react-icons/fa6';
-import { FaEdit } from "react-icons/fa";
-import { LuUsersRound } from 'react-icons/lu';
-import { CiBoxList, CiViewList } from 'react-icons/ci';
-import { FcBusinessContact } from 'react-icons/fc';
 
+import { IoIosArrowDown } from "react-icons/io";
+import { FaFileWaveform } from 'react-icons/fa6';
 import { IoHome } from "react-icons/io5";
 import { PiStudentFill } from "react-icons/pi";
 import { SiAuth0 } from "react-icons/si";
@@ -117,6 +109,9 @@ function Deshboard_Menu() {
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
                 <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Coutry Visa Conditions Section</Link>
+              </li>
+              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Countrys Popular Place Section</Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
                 <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Countrys Popular Place Section</Link>
@@ -284,10 +279,6 @@ function Deshboard_Menu() {
             </ul>
           )}
         </li>
-
-
-
-
       </div>
     </div>
   )
