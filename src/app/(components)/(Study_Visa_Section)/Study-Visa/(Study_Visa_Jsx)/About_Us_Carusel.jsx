@@ -8,7 +8,9 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-import imagecarusel from '../../../../../../public/Study_Visa_image/EU_bg (1).png'
+import imagecarusel from '../../../../../../public/Study_Visa_image/atiya.png'
+import imagecarusel1 from '../../../../../../public/Study_Visa_image/dowlet.png'
+import imagecarusel2 from '../../../../../../public/Study_Visa_image/abc.png'
 
 
 // import required modules
@@ -59,7 +61,18 @@ export default function About_Us_Carusel() {
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
+                            src={imagecarusel1}
+                            className=' h-80 w-full'
+
+                        >
+
+
+                        </Image>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image
+
+                            src={imagecarusel2}
                             className=' h-80 w-full'
 
                         >
@@ -81,7 +94,7 @@ export default function About_Us_Carusel() {
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
+                            src={imagecarusel1}
                             className=' h-80 w-full'
 
                         >
@@ -92,7 +105,7 @@ export default function About_Us_Carusel() {
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
+                            src={imagecarusel2}
                             className=' h-80 w-full'
 
                         >

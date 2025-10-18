@@ -1,6 +1,13 @@
 import React from 'react'
 
 import partnerlogo from '../../../../../public/images/partner-1.webp'
+import partnerlogo_1 from '../../../../../public/images/partner_2.webp'
+import partnerlogo_2 from '../../../../../public/images/partner-3.webp'
+import partnerlogo_3 from '../../../../../public/images/partner-4.webp'
+import partnerlogo_4 from '../../../../../public/images/partner-5.webp'
+import partnerlogo_5 from '../../../../../public/images/logo_tranelonejov.webp'
+import partnerlogo_6 from '../../../../../public/images/Morta_partner.webp'
+
 import Image from 'next/image'
 
 export default function Our_partner_section() {
@@ -18,29 +25,34 @@ export default function Our_partner_section() {
                             className="h-[150px] w-full rounded-2xl  "
                         />
                         <Image
-                            src={partnerlogo}
+                            src={partnerlogo_1}
                             alt="Megh cloud"
                             className="h-[150px] w-full rounded-2xl  "
                         />
                         <Image
-                            src={partnerlogo}
+                            src={partnerlogo_2}
                             alt="Megh cloud"
                             className="h-[150px] w-full rounded-2xl  "
                         />
                         <Image
-                            src={partnerlogo}
-                            alt="Megh cloud"
-                            className="h-[150px] w-full rounded-2xl  "
-                        />
-                        
-                        <Image
-                            src={partnerlogo}
+                            src={partnerlogo_3}
                             alt="Megh cloud"
                             className="h-[150px] w-full rounded-2xl  "
                         />
                         
                         <Image
-                            src={partnerlogo}
+                            src={partnerlogo_4}
+                            alt="Megh cloud"
+                            className="h-[150px] w-full rounded-2xl  "
+                        />
+                        
+                        <Image
+                            src={partnerlogo_5}
+                            alt="Megh cloud"
+                            className="h-[150px] w-full rounded-2xl  "
+                        />
+                        <Image
+                            src={partnerlogo_6}
                             alt="Megh cloud"
                             className="h-[150px] w-full rounded-2xl  "
                         />
