@@ -113,6 +113,17 @@ export default function About_Us_Carusel() {
 
                         </Image>
                     </SwiperSlide>
+                    <SwiperSlide>
+                        <Image
+
+                            src={imagecarusel2}
+                            className=' h-80 w-full'
+
+                        >
+
+
+                        </Image>
+                    </SwiperSlide>
 
                 </Swiper>
             </div>
