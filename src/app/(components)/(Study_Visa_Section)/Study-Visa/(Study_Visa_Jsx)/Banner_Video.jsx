@@ -25,8 +25,8 @@ export default function Banner_Video() {
 
         <Image
         src={logo}
-
         className=' h-32 w-72 md:h-40 md:w-80 pb-4'
+        alt='image1'
         
         >
 
