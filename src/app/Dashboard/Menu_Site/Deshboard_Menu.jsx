@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { FaHome, FaUsers, FaNetworkWired, FaNewspaper, FaProjectDiagram, FaWpforms, FaList, FaRegListAlt, FaThList, FaParachuteBox } from "react-icons/fa";
-import { MdBroadcastOnHome, MdMedicalServices, MdOutlineMiscellaneousServices, MdMiscellaneousServices, MdCategory, MdFolderShared, MdContactPhone } from "react-icons/md";
+
 
 import { IoIosArrowDown } from "react-icons/io";
 import { FaFileWaveform } from 'react-icons/fa6';
@@ -54,33 +54,33 @@ function Deshboard_Menu() {
         <li className={`flex-col gap-3 py-2 px-5 ${menuItemClass(false)}`}>
           <div className="flex items-center justify-between cursor-pointer w-full hover:bg-white hover:border-2 hover:border-[#E7E7E7] hover:w-full hover:p-1 hover:rounded-sm" onClick={() => setAllUsers(!AllUsersdropDown)}>
             <div className="flex items-center gap-3 ">
-              <span className="text-xl text-black"><IoHome /></span>
-              <span className=' text-black text-lg'>Home Page</span>
+              <span className="text-lg text-black"><IoHome /></span>
+              <span className=' text-black text-[16px]'>Home Page</span>
             </div>
             {renderDropdownIcon(AllUsersdropDown)}
           </div>
           {AllUsersdropDown && (
             <ul className=" mt-2 border-l border-gray-600 pl-4">
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'> Navbar News Section </Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Home/Navbar-News'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Home/Navbar-News" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Navbar News Section </Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'> Advangate Section Data</Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Advangate Section Data</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Company Founder Image</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Home/Company-Founder-Images'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Home/Company-Founder-Images" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Company Founder Image</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Company Swiper Image</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Home/Other-Founder-Swiper-Images'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Home/Other-Founder-Swiper-Images" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Other  Founder Swiper Image</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Working Visa Image Section Data</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Home/Visa-Result-Images'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Home/Visa-Result-Images" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Working Visa Image Section Data</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Our Service Card Data </Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Home/Our-Services'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Home/Our-Services" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Our Service Card Data </Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Faq Section Data</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Home/Faq-Data'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Home/Faq-Data" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Faq Section Data</Link>
               </li>
 
             </ul>
@@ -92,8 +92,8 @@ function Deshboard_Menu() {
         <li className={`${menuItemClass(isActive("/"))} flex-col gap-3 py-2  px-5`}>
           <div className="flex items-center  justify-between cursor-pointer w-full  hover:bg-white hover:border-2 hover:border-[#E7E7E7] hover:w-full hover:p-1 hover:rounded-sm" onClick={() => setHomeDropdown(!homeDropdown)}>
             <div className="flex items-center gap-3">
-              <span className="text-xl text-black"><FaNetworkWired /></span>
-              <span className=' text-black text-lg'>Work Visa</span>
+              <span className="text-lg text-black"><FaNetworkWired /></span>
+              <span className=' text-black text-[16px]'>Work Visa</span>
             </div>
             <div>
               {renderDropdownIcon(homeDropdown)}
@@ -102,19 +102,19 @@ function Deshboard_Menu() {
           {homeDropdown && (
             <ul className=" mt-2 border-l border-gray-600 pl-4">
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'> Country Data </Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Country Data </Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'> Visa jobs vacancies Section Data</Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Visa jobs vacancies Section Data</Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Coutry Visa Conditions Section</Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Coutry Visa Conditions Section</Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Countrys Popular Place Section</Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Countrys Popular Place Section</Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Countrys Popular Place Section</Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Countrys Popular Place Section</Link>
               </li>
 
 
@@ -128,27 +128,27 @@ function Deshboard_Menu() {
         <li className={`flex-col gap-3 py-2 px-5 ${menuItemClass(false)}`}>
           <div className="flex items-center justify-between cursor-pointer w-full  hover:bg-white hover:border-2 hover:border-[#E7E7E7] hover:w-full hover:p-1 hover:rounded-sm" onClick={() => setWorkDropdown(!workDropdown)}>
             <div className="flex items-center gap-3">
-              <span className="text-xl text-black"><FaParachuteBox /></span>
-              <span className=' text-black text-lg'>Study Visa</span>
+              <span className="text-lg text-black"><FaParachuteBox /></span>
+              <span className=' text-black text-[16px]'>Study Visa</span>
             </div>
             {renderDropdownIcon(workDropdown)}
           </div>
           {workDropdown && (
             <ul className=" mt-2 border-l border-gray-600 pl-4">
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'> Our Service Card Section </Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Our Service Card Section </Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'> Popular Destination Image Swiper Section</Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Popular Destination Image Swiper Section</Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>Study Country Image Section</Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Study Country Image Section</Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>What About Say Carusel Section</Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-[16px]'>What About Say Carusel Section</Link>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
 
 
@@ -160,20 +160,19 @@ function Deshboard_Menu() {
         <li className={`flex-col gap-3 py-2 px-5 ${menuItemClass(false)}`}>
           <div className="flex items-center justify-between cursor-pointer w-full hover:bg-white hover:border-2 hover:border-[#E7E7E7] hover:w-full hover:p-1 hover:rounded-sm" onClick={() => setProcessDropdown(!processDropdown)}>
             <div className="flex items-center gap-3">
-              <span className="text-xl text-black"><PiStudentFill /></span>
-              <span className=' text-black text-lg'>Turist Visa</span>
+              <span className="text-lg text-black"><PiStudentFill /></span>
+              <span className=' text-black text-[16px]'>Turist Visa</span>
             </div>
             {renderDropdownIcon(processDropdown)}
           </div>
           {processDropdown && (
             <ul className=" mt-2  border-gray-500 ">
-              <li className={menuItemClass(false)}>
-                <span className="text-2xl"><FaThList /></span>
-                <Link href="/Deshboard/DeshboardGallary/DeshboardGallaryDataList">Gallary All Data List</Link>
+             
+             <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
-              <li className={menuItemClass(false)}>
-                <span className="text-2xl"><FaThList /></span>
-                <Link href="/Deshboard/DeshboardGallary/DeshboardGallaryDataForm">Gallary Post Form </Link>
+              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
 
             </ul>
@@ -186,67 +185,23 @@ function Deshboard_Menu() {
         <li className={`flex-col gap-3 py-2 px-5 ${menuItemClass(false)}`}>
           <div className="flex items-center justify-between cursor-pointer w-full hover:bg-white hover:border-2 hover:border-[#E7E7E7] hover:w-full hover:p-1 hover:rounded-sm" onClick={() => setCareersDropdown(!careersDropdown)}>
             <div className="flex items-center gap-3">
-              <span className="text-xl text-black"><SiAuth0 /></span>
-              <span className=' text-black text-lg'>Legalization in Bangladesh</span>
+              <span className="text-lg text-black"><SiAuth0 /></span>
+              <span className=' text-black text-[16px]'>Legalization in Bangladesh</span>
             </div>
             {renderDropdownIcon(careersDropdown)}
           </div>
           {careersDropdown && (
             <ul className="ml-6 mt-2   pl-4">
 
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/About_Title_Text_List"))}>
-                <span className="text-2xl"><FaList /></span>
-                <Link href="/Deshboard/DeshboardAbout/About_Title_Text_List">Title Text List</Link>
+              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
-
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/About_Card_Data_List"))}>
-                <span className="text-2xl"><FaList /></span>
-                <Link href="/Deshboard/DeshboardAbout/About_Card_Data_List">About All Image List</Link>
+              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
-
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/About_Three_Banner_List"))}>
-                <span className="text-2xl"><FaList /></span>
-                <Link href="/Deshboard/DeshboardAbout/About_Three_Banner_List">Three Banner Data List</Link>
+              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
-
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/Deshboard_Last_Banner_Image_List"))}>
-                <span className="text-2xl"><FaList /></span>
-                <Link href="/Deshboard/DeshboardAbout/Deshboard_Last_Banner_Image_List">Banner Last Image List</Link>
-              </li>
-
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/About_Last_Banner_Text_List"))}>
-                <span className="text-2xl"><FaList /></span>
-                <Link href="/Deshboard/DeshboardAbout/About_Last_Banner_Text_List"> Last Banner Data List</Link>
-              </li>
-
-
-              {/* form */}
-
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/About_Title_Text_Form"))}>
-                <span className="text-2xl"><FaFileWaveform /></span>
-                <Link href="/Deshboard/DeshboardAbout/About_Title_Text_Form">Title Text Form</Link>
-              </li>
-
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/About_Image_Data"))}>
-                <span className="text-2xl"><FaFileWaveform /></span>
-                <Link href="/Deshboard/DeshboardAbout/About_Image_Data"> Banner All Image Form</Link>
-              </li>
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/About_Three_Banner_Form"))}>
-                <span className="text-2xl"><FaFileWaveform /></span>
-                <Link href="/Deshboard/DeshboardAbout/About_Three_Banner_Form">Three Banner Data Form</Link>
-              </li>
-
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/Deshboard_Last_Banner_Image_Form"))}>
-                <span className="text-2xl"><FaFileWaveform /></span>
-                <Link href="/Deshboard/DeshboardAbout/Deshboard_Last_Banner_Image_Form">Last Banner Image Form</Link>
-              </li>
-
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardAbout/About_Last_Banner_Text_Form"))}>
-                <span className="text-2xl"><FaFileWaveform /></span>
-                <Link href="/Deshboard/DeshboardAbout/About_Last_Banner_Text_Form"> Last Banner Text Form</Link>
-              </li>
-
-
             </ul>
           )}
         </li>
@@ -257,8 +212,8 @@ function Deshboard_Menu() {
         <li className={`flex-col gap-3 py-2 px-5 ${menuItemClass(false)}`}>
           <div className="flex items-center justify-between cursor-pointer w-full hover:bg-white hover:border-2 hover:border-[#E7E7E7] hover:w-full hover:p-1 hover:rounded-sm" onClick={() => setContactus(!contactus)}>
             <div className="flex items-center gap-3">
-              <span className="text-xl text-black"><FaFileWaveform /></span>
-              <span className=' text-black text-lg'>Appointment in Global</span>
+              <span className="text-lg text-black"><FaFileWaveform /></span>
+              <span className=' text-black text-[16px]'>Appointment in Global</span>
             </div>
             {renderDropdownIcon(contactus)}
           </div>
@@ -266,14 +221,11 @@ function Deshboard_Menu() {
             <ul className="ml-6 mt-2   pl-4">
 
 
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardContact/DeshboardContactList"))}>
-                <span className="text-2xl"><FaList /></span>
-                <Link href="/Deshboard/DeshboardContact/DeshboardContactList"> Contact All Data List</Link>
+              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
-
-              <li className={menuItemClass(isActive("/Deshboard/DeshboardContact/DeshboardContactForm"))}>
-                <span className="text-2xl"><FaFileWaveform /></span>
-                <Link href="/Deshboard/DeshboardContact/DeshboardContactForm"> Contact All Data Form</Link>
+              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
 
             </ul>
