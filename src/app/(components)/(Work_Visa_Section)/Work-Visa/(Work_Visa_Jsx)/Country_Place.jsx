@@ -5,9 +5,9 @@ import japanimage from '../../../../../../public/work_visa_image/rabotnik_sklada
 import flagimage from '../../../../../../public/work_visa_image/avstriaya.jpg'
 import image1 from '../../../../../../public/work_visa_image/kanada.jpg'
 import image2 from '../../../../../../public/work_visa_image/angliaya.jpg'
-import image3 from '../../../../../../public/work_visa_image/novaaya_zelandiaya.jpeg'
+// import image3 from '../../../../../../public/work_visa_image/novaaya_zelandiaya.jpeg'
 import image4 from '../../../../../../public/work_visa_image/dybai.jpg'
-import image5 from '../../../../../../public/work_visa_image/katar.jpg'
+// import image5 from '../../../../../../public/work_visa_image/katar.jpg'
 import image6 from '../../../../../../public/work_visa_image/balkanskiy_polyostrov.png'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
@@ -136,7 +136,9 @@ export default function Country_Place() {
                         {/* right side */}
                         <div className='md:col-span-8 lg:col-span-6'>
                           <Image
-                            src={image3}
+                            src={image2
+                                
+                            }
                             alt='Europe Background'
                             className='h-72 w-full rounded-3xl object-cover'
                           />
@@ -208,7 +210,7 @@ export default function Country_Place() {
                         {/* right side */}
                         <div className='md:col-span-8 lg:col-span-6'>
                           <Image
-                            src={image5}
+                            src={image6}
                             alt='Europe Background'
                             className='h-72 w-full rounded-3xl object-cover'
                           />
