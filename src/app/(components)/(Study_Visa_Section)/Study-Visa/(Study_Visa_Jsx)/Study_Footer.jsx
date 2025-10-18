@@ -41,26 +41,28 @@ export default function Study_Footer() {
                                 <span>
                                     <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                                 </span>
-                                <h4 className=' text-[16px] text-white'>+8801624254327</h4>
+                                <h4 className=' text-[16px] text-white'>+8801624259327</h4>
                             </div>
                             <div className=' flex items-center gap-x-2'>
                                 <span>
-                                    <span > <FaSquarePhone className='text-xl text-white' /></span>
+                                    <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                                 </span>
-                                <h4 className=' text-[16px] text-white'>+8801624254328</h4>
+                                <h4 className=' text-[16px] text-white'>+8801624259328</h4>
                             </div>
                             <div className=' flex items-center gap-x-2'>
                                 <span>
-                                    <span > <FaPhoneVolume className='text-xl text-white' /></span>
+                                    <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                                 </span>
-                                <h4 className=' text-[16px] text-white'>+8801624254329</h4>
+                                <h4 className=' text-[16px] text-white'>+8801624259329</h4>
                             </div>
                             <div className=' flex items-center gap-x-2'>
                                 <span>
-                                    <span > <FaPhoneVolume className='text-xl text-white' /></span>
+                                    <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                                 </span>
                                 <h4 className=' text-[16px] text-white'>+8801712347288</h4>
                             </div>
+                           
+                          
                             <div className=' flex items-center gap-x-2'>
                                 <span>
                                     <span > <MdEmail className='text-xl text-white' /></span>

@@ -8,13 +8,13 @@ export default function Banner_Video() {
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
       <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="/Study_Visa_image/studyvideo.mp4"
         autoPlay
         loop
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      >
-        <source src="/Study_Visa_image/video.mp4" type="video/mp4" />
+        >
       </video>
 
       {/* Optional dark overlay for text readability */}
