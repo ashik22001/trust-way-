@@ -90,6 +90,7 @@ export default function Popular_Place_Swiper() {
                         <Image
 
                             src={imagecaruse2}
+                            alt=''
                             className=' h-60 w-full'
 
                         >
@@ -101,6 +102,7 @@ export default function Popular_Place_Swiper() {
                         <Image
 
                             src={imagecaruse3}
+                            alt=''
                             className=' h-60 w-full'
 
                         >
@@ -112,6 +114,7 @@ export default function Popular_Place_Swiper() {
                         <Image
 
                             src={imagecaruse4}
+                            alt=''
                             className=' h-60 w-full'
 
                         >
@@ -123,6 +126,7 @@ export default function Popular_Place_Swiper() {
                         <Image
 
                             src={imagecaruse5}
+                            alt=''
                             className=' h-60 w-full'
 
                         >
@@ -134,6 +138,7 @@ export default function Popular_Place_Swiper() {
                         <Image
 
                             src={imagecaruse6}
+                            alt=''
                             className=' h-60 w-full'
 
                         >

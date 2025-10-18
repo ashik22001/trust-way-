@@ -32,9 +32,9 @@ export default function About_Us_Carusel() {
 
             {/* carusel section  */}
 
-            <div className=' py-10 px-5 md:px-10  lg:px-40'>
+            <div className=' py-10 px-5 md:px-10  lg:px-40 '>
                 <Swiper
-                    slidesPerView={1}
+                    slidesPerView={2}
                     spaceBetween={10}
                     freeMode={true}
                     pagination={{
@@ -43,7 +43,7 @@ export default function About_Us_Carusel() {
                     modules={[FreeMode, Pagination, Navigation, Autoplay]}
                     className="mySwiper"
                     autoplay={{
-                        delay: 2500,
+                        delay: 2600,
                         disableOnInteraction: false,
                     }}
                 >
@@ -51,7 +51,7 @@ export default function About_Us_Carusel() {
                         <Image
 
                             src={imagecarusel}
-                            className=' h-80 w-full'
+                            className=' h-80 w-150'
                             alt='image1'
                         >
                         </Image>
@@ -60,7 +60,7 @@ export default function About_Us_Carusel() {
                         <Image
 
                             src={imagecarusel1}
-                            className=' h-80 w-full'
+                            className=' h-80 w-150'
                             alt='image2'
 
                         >
@@ -70,7 +70,7 @@ export default function About_Us_Carusel() {
                         <Image
 
                             src={imagecarusel2}
-                            className=' h-80 w-full'
+                            className=' h-80 w-150'
                             alt='image3'
                         >
                         </Image>
@@ -78,7 +78,7 @@ export default function About_Us_Carusel() {
                     <SwiperSlide>
                         <Image
                             src={imagecarusel}
-                            className=' h-80 w-full'
+                            className=' h-80 w-150'
                             alt='image3'
                         >
                         </Image>
@@ -87,7 +87,7 @@ export default function About_Us_Carusel() {
                         <Image
 
                             src={imagecarusel1}
-                            className=' h-80 w-full'
+                            className=' h-80 w-150'
                             alt='image4'
                         >
 
@@ -96,7 +96,7 @@ export default function About_Us_Carusel() {
                     <SwiperSlide>
                         <Image
                             src={imagecarusel2}
-                            className=' h-80 w-full'
+                            className=' h-80 w-150'
                             alt='image5'
                         >
                         </Image>

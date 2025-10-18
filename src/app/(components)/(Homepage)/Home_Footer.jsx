@@ -12,7 +12,7 @@ export default function Home_Footer() {
 
             {/* footer first part  */}
 
-            <div className=' grid grid-cols-4  pt-16 pb-10 px-20 gap-x-10  justify-center border-b-2 border-gray-500'>
+            <div className=' grid md:grid-cols-2  lg:grid-cols-4  pt-16 pb-10 px-3 md:px-10 lg:px-14 xl:px-20 gap-x-10  justify-center border-b-2 border-gray-500 space-y-10 md:space-y-0'>
                 {/* logo section */}
                 <div className=' items-center justify-center'>
                     {/* logo section */}
@@ -105,7 +105,7 @@ export default function Home_Footer() {
 
                         <div className=' text-lg  w-full text-white  font-semibold'>
                             Saturday - Thursday
-                            10:00 - 17:00
+                            8:00 - 10:00
                         </div>
                     </div>
                 </div>
@@ -113,10 +113,10 @@ export default function Home_Footer() {
 
             {/* footer second part  */}
 
-            <div className='   py-3 px-20 gap-x-10  justify-center '>
+            <div className='   py-3 px-5 md:px-20 gap-x-10  justify-center '>
 
 
-                <ul className=' flex items-center justify-center gap-x-5'>
+                <ul className=' md:flex items-center justify-center gap-x-5'>
                     <li className=' text-[17px] font-semibold text-white'>Home</li>
                     <li className=' text-[17px] font-semibold text-white'>Work Visas</li>
                     <li className=' text-[17px] font-semibold text-white'>Tourist Visas</li>
