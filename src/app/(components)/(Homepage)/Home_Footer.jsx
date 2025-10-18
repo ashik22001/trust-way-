@@ -44,6 +44,8 @@ export default function Home_Footer() {
 
                         <div className=' text-lg  w-full text-white font-semibold'>
                             
+                            info@trustwayglobal.com
+                            
                         </div>
                     </div>
                     {/* contact section */}

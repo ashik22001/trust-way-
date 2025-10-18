@@ -15,7 +15,7 @@ export default function Banner_section_2() {
       </div>
 
       {/* background image */}
-      <div className="bg-[url(/images/original.webp)] h-lvh md:h-[600px] lg:h-[600px]  w-full bg-cover bg-center "></div>
+      <div className="bg-[url(/images/original.png)] h-lvh md:h-[600px] lg:h-[600px]  w-full bg-cover bg-center "></div>
 
       {/* megh image */}
       <div className="absolute -top-5 md:-top-8 lg:-top-5 z-30 hidden md:block ">
