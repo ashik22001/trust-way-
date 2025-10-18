@@ -37,10 +37,11 @@ export default function Country_Card() {
             <div className=' px-0 md:px-10 lg:px-14 xl:px-20 py-5  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-2 md:gap-4'>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -49,10 +50,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage2}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage2}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -61,10 +63,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage3}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage3}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -73,10 +76,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage4}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage4}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -85,10 +89,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage5}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage5}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
                     </Image>
 
@@ -96,10 +101,10 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage6}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage6}
+                        className=' h-20 w-full'
+                        alt='image1'
                     >
 
                     </Image>
@@ -108,10 +113,10 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage7}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage7}
+                        className=' h-20 w-full'
+                        alt='image1'
                     >
                     </Image>
 
@@ -119,10 +124,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage8}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage8}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -131,10 +137,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage9}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage9}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -143,10 +150,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage10}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage10}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -155,10 +163,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage11}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage11}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -167,10 +176,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage12}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage12}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -179,10 +189,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage13}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage13}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -191,10 +202,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage14}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage14}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -203,10 +215,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage15}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage15}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -215,10 +228,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage16}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage16}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -227,10 +241,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage17}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage17}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -239,10 +254,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage18}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage18}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -251,10 +267,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage19}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage19}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -263,10 +280,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage20}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage20}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -275,10 +293,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage21}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage21}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -287,24 +306,26 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage22}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage22}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
 
                     <h4 className=' text-xl text-[#11005E] text-center py-5'>STYDY IN SLOVENIA </h4>
                 </div>
-              
-                
+
+
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage23}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage23}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -313,10 +334,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage24}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage24}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -325,10 +347,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage25}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage25}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -337,10 +360,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage26}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage26}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -349,10 +373,11 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage27}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage27}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
@@ -361,17 +386,18 @@ export default function Country_Card() {
                 </div>
                 <div className='bg-white p-3 shadow-sm shadow-gray-400 rounded-lg hover:bg-[#D1D1D1]'>
                     <Image
-                    
-                    src={flagimage28}
-                    className=' h-20 w-full'
-                    
+
+                        src={flagimage28}
+                        className=' h-20 w-full'
+                        alt='image1'
+
                     >
 
                     </Image>
 
                     <h4 className=' text-xl text-[#11005E] text-center py-5'>STYDY IN USA</h4>
                 </div>
-                
+
             </div>
         </div>
     )

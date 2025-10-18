@@ -19,7 +19,7 @@ export default function Banner_Section() {
                 <Image
 
                     src={menimage}
-
+alt='image1'
                     className=' h-[550px]'
 
                 >
@@ -45,7 +45,7 @@ export default function Banner_Section() {
                      <Image
 
                     src={imageversity}
-
+                    alt='image1'
                     className=' h-36 w-60 rounded-4xl'
 
                 >

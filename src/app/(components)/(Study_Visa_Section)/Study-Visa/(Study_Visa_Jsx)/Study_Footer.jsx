@@ -27,7 +27,7 @@ export default function Study_Footer() {
                         <div className=' flex items-center justify-center'>
                             <Image
                                 src={logo}
-
+                                alt='image1'
                                 className=' h-20 w-60 pb-2 '
                             >
 

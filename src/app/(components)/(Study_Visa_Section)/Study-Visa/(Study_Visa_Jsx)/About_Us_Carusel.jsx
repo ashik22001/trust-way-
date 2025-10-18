@@ -52,10 +52,8 @@ export default function About_Us_Carusel() {
 
                             src={imagecarusel}
                             className=' h-80 w-full'
-
+                            alt='image1'
                         >
-
-
                         </Image>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -63,10 +61,9 @@ export default function About_Us_Carusel() {
 
                             src={imagecarusel1}
                             className=' h-80 w-full'
+                            alt='image2'
 
                         >
-
-
                         </Image>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -74,21 +71,16 @@ export default function About_Us_Carusel() {
 
                             src={imagecarusel2}
                             className=' h-80 w-full'
-
+                            alt='image3'
                         >
-
-
                         </Image>
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
-
                             src={imagecarusel}
                             className=' h-80 w-full'
-
+                            alt='image3'
                         >
-
-
                         </Image>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -96,35 +88,20 @@ export default function About_Us_Carusel() {
 
                             src={imagecarusel1}
                             className=' h-80 w-full'
-
+                            alt='image4'
                         >
-
 
                         </Image>
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
-
                             src={imagecarusel2}
                             className=' h-80 w-full'
-
+                            alt='image5'
                         >
-
-
                         </Image>
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <Image
-
-                            src={imagecarusel2}
-                            className=' h-80 w-full'
-
-                        >
-
-
-                        </Image>
-                    </SwiperSlide>
-
+                 
                 </Swiper>
             </div>
         </div>
