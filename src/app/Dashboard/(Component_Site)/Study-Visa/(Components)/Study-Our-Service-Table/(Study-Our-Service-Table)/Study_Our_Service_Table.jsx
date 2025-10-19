@@ -15,7 +15,7 @@ import Image from 'next/image'
 import { FaRegEdit } from 'react-icons/fa'
 import { MdDeleteForever } from 'react-icons/md'
 
-export default function Coutry_Visa_Conditions_Section() {
+export default function Study_Our_Service_Table() { 
   return (
   
     <div className="w-full px-5">
@@ -23,7 +23,7 @@ export default function Coutry_Visa_Conditions_Section() {
 
                 <Button>
                     <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/Dashboard/Home/Company-Founder-Image-Form'> Post Founder  Images</Link>
+                    <Link href='/Dashboard/Study-Visa/Study-Our-Service-Form'> Post Founder  Images</Link>
 
                 </Button>
 
@@ -145,5 +145,3 @@ export default function Coutry_Visa_Conditions_Section() {
         </div>
   )
 }
-
-

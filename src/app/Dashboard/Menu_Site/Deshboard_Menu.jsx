@@ -135,22 +135,19 @@ function Deshboard_Menu() {
           </div>
           {workDropdown && (
             <ul className=" mt-2 border-l border-gray-600 pl-4">
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Our Service Card Section </Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Study-Visa/Study-Our-Service-Table'))} xl:text-lg lg:text-[16px]`}>
+                <Link href='/Dashboard/Study-Visa/Study-Our-Service-Table' className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Our Service Card Section </Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Popular Destination Image Swiper Section</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Study-Visa/Popular-Place-Swiper-Table'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Study-Visa/Popular-Place-Swiper-Table" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Popular Destination Image Swiper Section</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Study Country Image Section</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Study-Visa/Study-Country-Card-Table'))} xl:text-lg lg:text-[16px]`}>
+                <Link href='/Dashboard/Study-Visa/Study-Country-Card-Table' className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Study Country Image Section</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Study-Visa/About-Us-Carusel-Table'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Study-Visa/About-Us-Carusel-Table" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>What About Say Carusel Section</Link>
-              </li>
-
+             
 
             </ul>
           )}
