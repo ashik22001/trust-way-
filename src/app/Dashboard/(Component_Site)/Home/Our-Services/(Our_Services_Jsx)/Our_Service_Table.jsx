@@ -25,7 +25,7 @@ export default function Our_Service_Table() {
 
                 <Button>
                     <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/'> Post New News</Link>
+                    <Link href='/Dashboard/Home/Our-Service-Form'> Post Our service</Link>
                 </Button>
 
             </div>

@@ -25,7 +25,7 @@ export default function Other_Founder_Images_Table() {
 
                 <Button>
                     <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/'> Post New News</Link>
+                    <Link href='/Dashboard/Home/Other-Founder-Swiper-Images-Form'> Post Founder New Images</Link>
                 </Button>
 
             </div>
