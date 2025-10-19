@@ -27,7 +27,7 @@ function Visa_Result_Images() {
 
                 <Button>
                     <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/'> Post New News</Link>
+                    <Link href='/Dashboard/Home/Visa-Result-Image-Form'> Post Visa New Images</Link>
                 </Button>
 
             </div>

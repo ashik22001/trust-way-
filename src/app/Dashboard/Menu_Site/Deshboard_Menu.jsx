@@ -101,20 +101,20 @@ function Deshboard_Menu() {
           </div>
           {homeDropdown && (
             <ul className=" mt-2 border-l border-gray-600 pl-4">
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Country Data </Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Work-Visa/Country-Data-Form-List'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Work-Visa/Country-Data-Form-List" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Country Data </Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Visa jobs vacancies Section Data</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Work-Visa/Visa-jobs-vacancies-Section-Data-List'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Work-Visa/Visa-jobs-vacancies-Section-Data-List" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'> Visa jobs vacancies Section Data</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Coutry Visa Conditions Section</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Work-Visa/Coutry-Visa-Conditions-Section-List'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Work-Visa/Coutry-Visa-Conditions-Section-List" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Coutry Visa Conditions Section</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Countrys Popular Place Section</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Home/Other-Founder-Swiper-Images'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Home/Other-Founder-Swiper-Images" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Countrys Popular Place Section</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/dashboard/DeshboardLoginLogout/AllUsers'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/dashboard/DeshboardLoginLogout/AllUsers" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Countrys Popular Place Section</Link>
+              <li className={`${menuItemClass(isActive('/Dashboard/Home/Other-Founder-Swiper-Images'))} xl:text-lg lg:text-[16px]`}>
+                <Link href="/Dashboard/Home/Other-Founder-Swiper-Images" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Countrys Popular Place Section</Link>
               </li>
 
 

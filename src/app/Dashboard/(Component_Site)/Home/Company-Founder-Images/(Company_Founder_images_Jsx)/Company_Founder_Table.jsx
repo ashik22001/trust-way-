@@ -26,7 +26,8 @@ export default function Company_Founder_Table() {
 
                 <Button>
                     <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/'> Post New News</Link>
+                    <Link href='/Dashboard/Home/Company-Founder-Image-Form'> Post Founder New Images</Link>
+
                 </Button>
 
             </div>
@@ -52,8 +53,8 @@ export default function Company_Founder_Table() {
                         <TableRow>
                             <TableCell cl>
                                 <Image
-                                src={image1}
-                                className=" h-28  w-28 rounded-lg"
+                                    src={image1}
+                                    className=" h-28  w-28 rounded-lg"
                                 ></Image>
                             </TableCell>
                             <TableCell className={'text-center'} >
@@ -75,8 +76,8 @@ export default function Company_Founder_Table() {
                         <TableRow>
                             <TableCell cl>
                                 <Image
-                                src={image1}
-                                className=" h-28  w-28 rounded-lg"
+                                    src={image1}
+                                    className=" h-28  w-28 rounded-lg"
                                 ></Image>
                             </TableCell>
                             <TableCell className={'text-center'} >
@@ -98,8 +99,8 @@ export default function Company_Founder_Table() {
                         <TableRow>
                             <TableCell cl>
                                 <Image
-                                src={image1}
-                                className=" h-28  w-28 rounded-lg"
+                                    src={image1}
+                                    className=" h-28  w-28 rounded-lg"
                                 ></Image>
                             </TableCell>
                             <TableCell className={'text-center'} >
@@ -118,7 +119,7 @@ export default function Company_Founder_Table() {
                                 </Link>
                             </TableCell>
                         </TableRow>
-                       
+
 
                     </TableBody>
                 </Table>

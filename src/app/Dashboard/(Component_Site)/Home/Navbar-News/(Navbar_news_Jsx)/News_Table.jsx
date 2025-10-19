@@ -26,7 +26,7 @@ export default function News_Table() {
 
                 <Button>
                      <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/'> Post New News</Link>
+                    <Link href='/Dashboard/Home/Navbar-News-Form'> Post New News</Link>
                 </Button>
 
             </div>

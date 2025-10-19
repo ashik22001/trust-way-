@@ -25,7 +25,7 @@ function Faq_Data_Table() {
 
                 <Button>
                      <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/'> Post New News</Link>
+                    <Link href='/Dashboard/Home/Faq-Data-Form'> Post FAQ Data </Link>
                 </Button>
 
             </div>
