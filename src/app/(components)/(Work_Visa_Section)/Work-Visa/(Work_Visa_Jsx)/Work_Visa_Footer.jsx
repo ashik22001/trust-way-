@@ -41,19 +41,19 @@ export default function Work_Visa_Footer() {
                             <span>
                                 <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                             </span>
-                            <h4 className=' text-lg text-white'>+8801624254327</h4>
+                            <h4 className=' text-lg text-white'>+8801624259327</h4>
                         </div>
                         <div className=' flex items-center gap-x-2'>
                             <span>
                                 <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                             </span>
-                            <h4 className=' text-lg text-white'>+8801624254324</h4>
+                            <h4 className=' text-lg text-white'>+8801624259328</h4>
                         </div>
                         <div className=' flex items-center gap-x-2'>
                             <span>
                                 <span > <FaWhatsappSquare className='text-xl text-white' /></span>
                             </span>
-                            <h4 className=' text-lg text-white'>+8801624254324</h4>
+                            <h4 className=' text-lg text-white'>+8801624259329</h4>
                         </div>
                         <div className=' flex items-center gap-x-2'>
                             <span>
@@ -65,7 +65,7 @@ export default function Work_Visa_Footer() {
                             <span>
                                 <span > <MdEmail className='text-xl text-white' /></span>
                             </span>
-                            <h4 className=' text-lg text-white'>trustwayglobal@gmail.com</h4>
+                            <h4 className=' text-lg text-white'>info@trustwayglobal.com</h4>
                         </div>
                          
                     </div>
@@ -85,7 +85,7 @@ export default function Work_Visa_Footer() {
                     <div className=' flex flex-col items-center justify-center py-5 space-y-1 mt-10 md:mt-0'>
                         <div className='  items-center gap-x-2'>
                             
-                            <h4 className=' text-lg text-white'>Work in the EU</h4>
+                            <h4 className=' text-lg text-white'>Work in the EU countries</h4>
                         </div>
                         <div className='  items-center gap-x-2'>
                             

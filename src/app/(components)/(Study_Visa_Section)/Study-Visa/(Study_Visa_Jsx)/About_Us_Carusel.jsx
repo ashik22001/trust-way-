@@ -8,7 +8,9 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-import imagecarusel from '../../../../../../public/Study_Visa_image/EU_bg (1).png'
+import imagecarusel from '../../../../../../public/Study_Visa_image/atiya.png'
+import imagecarusel1 from '../../../../../../public/Study_Visa_image/dowlet.png'
+import imagecarusel2 from '../../../../../../public/Study_Visa_image/abc.png'
 
 
 // import required modules
@@ -30,9 +32,9 @@ export default function About_Us_Carusel() {
 
             {/* carusel section  */}
 
-            <div className=' py-10 px-5 md:px-10  lg:px-40'>
+            <div className=' py-10 px-5 md:px-10  lg:px-40 '>
                 <Swiper
-                    slidesPerView={1}
+                    slidesPerView={2}
                     spaceBetween={10}
                     freeMode={true}
                     pagination={{
@@ -41,7 +43,7 @@ export default function About_Us_Carusel() {
                     modules={[FreeMode, Pagination, Navigation, Autoplay]}
                     className="mySwiper"
                     autoplay={{
-                        delay: 2500,
+                        delay: 2600,
                         disableOnInteraction: false,
                     }}
                 >
@@ -49,58 +51,57 @@ export default function About_Us_Carusel() {
                         <Image
 
                             src={imagecarusel}
-                            className=' h-80 w-full'
-
+                            className=' h-80 w-150'
+                            alt='image1'
                         >
-
-
                         </Image>
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
-                            className=' h-80 w-full'
+                            src={imagecarusel1}
+                            className=' h-80 w-150'
+                            alt='image2'
 
                         >
-
-
                         </Image>
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
-                            className=' h-80 w-full'
-
+                            src={imagecarusel2}
+                            className=' h-80 w-150'
+                            alt='image3'
                         >
-
-
+                        </Image>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image
+                            src={imagecarusel}
+                            className=' h-80 w-150'
+                            alt='image3'
+                        >
                         </Image>
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
-                            className=' h-80 w-full'
-
+                            src={imagecarusel1}
+                            className=' h-80 w-150'
+                            alt='image4'
                         >
-
 
                         </Image>
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
-
-                            src={imagecarusel}
-                            className=' h-80 w-full'
-
+                            src={imagecarusel2}
+                            className=' h-80 w-150'
+                            alt='image5'
                         >
-
-
                         </Image>
                     </SwiperSlide>
-
+                 
                 </Swiper>
             </div>
         </div>

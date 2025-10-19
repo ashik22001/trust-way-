@@ -24,9 +24,9 @@ import { FaArrowCircleRight } from "react-icons/fa";
 
 export default function Country_Category() {
   return (
-    <div className=' bg-[#2886C6]'>
+    <div className=' bg-[#2283C4]'>
       {/* header text  */}
-      <h1 className=' text-4xl font-bold text-[#0000FF] py-4 text-center'>We provide work visas to the following countries:</h1>
+      <h1 className=' text-4xl font-bold text-[#01018b] py-4 text-center'>We provide work visas to the following countries:</h1>
 
       {/* country section */}
 
@@ -80,56 +80,56 @@ export default function Country_Category() {
           >
             <SwiperSlide >
                   <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#4545f5] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
+                    <Button className="text-lg font-[400] text-white bg-[#01018b] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
                       EU Country
                     </Button>
                   </div>
                 </SwiperSlide>
                  <SwiperSlide >
                   <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#4545f5] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
+                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
                       Australia
                     </Button>
                   </div>
                 </SwiperSlide>
                  <SwiperSlide >
                   <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#4545f5] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
+                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
                       Canada
                     </Button>
                   </div>
                 </SwiperSlide>
                  <SwiperSlide >
                   <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#4545f5] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
+                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
                       England
                     </Button>
                   </div>
                 </SwiperSlide>
                  <SwiperSlide >
                   <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#4545f5] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
+                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
                       New Zealand
                     </Button>
                   </div>
                 </SwiperSlide>
                  <SwiperSlide >
                   <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#4545f5] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
+                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
                       Dubai 
                     </Button>
                   </div>
                 </SwiperSlide>
                  <SwiperSlide >
                   <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#4545f5] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
+                    <Button className="text-lg font-[400] text-white bg-[#01018b] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
                       Qatar
                     </Button>
                   </div>
                 </SwiperSlide>
                  <SwiperSlide >
                   <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#4545f5] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
+                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
                       Balkan semi-detached
                     </Button>
                   </div>

@@ -8,7 +8,12 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-import imagecarusel from '../../../../../../public/Study_Visa_image/EU_bg (1).png'
+import imagecaruse1 from '../../../../../../public/Study_Visa_image/EU_bg (1).png'
+import imagecaruse2 from '../../../../../../public/Study_Visa_image/avstriaya (1).jpg'
+import imagecaruse3 from '../../../../../../public/Study_Visa_image/belgiaya (1).jpg'
+import imagecaruse4 from '../../../../../../public/Study_Visa_image/bolgariya.jpg'
+import imagecaruse5 from '../../../../../../public/Study_Visa_image/daniaya.jpg'
+import imagecaruse6 from '../../../../../../public/Study_Visa_image/kipr (1).jpg'
 
 
 // import required modules
@@ -80,10 +85,12 @@ export default function Popular_Place_Swiper() {
                         disableOnInteraction: false,
                     }}
                 >
+                
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
+                            src={imagecaruse2}
+                            alt=''
                             className=' h-60 w-full'
 
                         >
@@ -94,7 +101,8 @@ export default function Popular_Place_Swiper() {
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
+                            src={imagecaruse3}
+                            alt=''
                             className=' h-60 w-full'
 
                         >
@@ -105,7 +113,8 @@ export default function Popular_Place_Swiper() {
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
+                            src={imagecaruse4}
+                            alt=''
                             className=' h-60 w-full'
 
                         >
@@ -116,7 +125,8 @@ export default function Popular_Place_Swiper() {
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
+                            src={imagecaruse5}
+                            alt=''
                             className=' h-60 w-full'
 
                         >
@@ -127,7 +137,8 @@ export default function Popular_Place_Swiper() {
                     <SwiperSlide>
                         <Image
 
-                            src={imagecarusel}
+                            src={imagecaruse6}
+                            alt=''
                             className=' h-60 w-full'
 
                         >
@@ -135,6 +146,8 @@ export default function Popular_Place_Swiper() {
 
                         </Image>
                     </SwiperSlide>
+                    
+
 
                 </Swiper>
             </div>
