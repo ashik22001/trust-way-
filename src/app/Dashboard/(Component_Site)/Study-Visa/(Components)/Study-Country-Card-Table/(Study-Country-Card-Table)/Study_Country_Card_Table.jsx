@@ -15,7 +15,7 @@ import Image from 'next/image'
 import { FaRegEdit } from 'react-icons/fa'
 import { MdDeleteForever } from 'react-icons/md'
 
-export default function Coutry_Visa_Conditions_Section() {
+export default function Popular_Place_Swiper_Form() {
   return (
   
     <div className="w-full px-5">
