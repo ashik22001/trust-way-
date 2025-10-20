@@ -1,19 +1,24 @@
 'use client'
 
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import logo from '../../../../public/images/trust_logo.png'
 import Marquee from "react-fast-marquee"
 import Link from "next/link"
 
 import { TiThMenu } from "react-icons/ti";
 import { MdClose } from 'react-icons/md'
+import { AuthContext } from '../../../../Context/AuthContext/AuthContext'
 
 
 export default function Navbar() {
 
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const {a} = useContext(AuthContext)
+
+  console.log(a)
 
 
   return (
@@ -36,7 +41,7 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:col-span-9">
           <Marquee>
             <h4 className="text-white text-lg font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum cupiditate voluptatem id ullam quisquam eaque magnam omnis dolorem praesentium exercitationem modi dolor tenetur, quos, tempore cum sequi dolore sit repellat.
+             {a}
             </h4>
           </Marquee>
         </div>

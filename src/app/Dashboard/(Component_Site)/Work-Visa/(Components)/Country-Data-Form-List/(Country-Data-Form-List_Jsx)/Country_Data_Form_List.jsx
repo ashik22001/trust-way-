@@ -23,7 +23,7 @@ export default function Country_Data_Form_List() {
 
                 <Button>
                      <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/Dashboard/Home/Navbar-News-Form'> Post New Country Data</Link>
+                    <Link href='/Dashboard/Home/Navbar-News-Form'> Post New Country Name</Link>
                 </Button>
 
             </div>
@@ -31,8 +31,8 @@ export default function Country_Data_Form_List() {
                 <Table>
                     <TableHeader>
                         <TableRow >
-                            <TableHead  >
-                                News Title
+                            <TableHead >
+                                Country Name 
                             </TableHead>
                             <TableHead className={'text-center'} >
                                 Posted Date
@@ -46,66 +46,6 @@ export default function Country_Data_Form_List() {
                         </TableRow>
                     </TableHeader>
                     <TableBody>
-                        <TableRow>
-                            <TableCell cl>
-                                Lorem ipsum dolor sit amet, consectetur....
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                5.10.25
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell cl>
-                                Lorem ipsum dolor sit amet, consectetur....
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                5.10.25
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell cl>
-                                Lorem ipsum dolor sit amet, consectetur....
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                5.10.25
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                        </TableRow>
                         <TableRow>
                             <TableCell cl>
                                 Lorem ipsum dolor sit amet, consectetur....
