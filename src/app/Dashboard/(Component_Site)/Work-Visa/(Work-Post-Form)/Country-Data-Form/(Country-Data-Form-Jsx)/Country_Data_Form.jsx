@@ -7,7 +7,7 @@ import { Textarea } from '@/components/ui/textarea'
 import Swal from 'sweetalert2'
 
 
-export default function Faq_Data_Form() {
+export default function Country_Data_Form() {
 
 
     const handle_Form_Submit = async (e) => {
