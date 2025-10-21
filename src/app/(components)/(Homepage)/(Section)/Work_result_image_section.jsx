@@ -16,13 +16,36 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { useAuth } from '../../../../../Context/AuthContext/AuthContext';
 
-import { FaArrowAltCircleLeft } from "react-icons/fa";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 
 
 
 export default function Work_result_image_section() {
+
+
+    // context api state coll 
+
+    const { Visa_Image, setVisa_Image } = useAuth()
+
+
+
+    // fetch company founder image
+
+
+    React.useEffect(() => {
+        fetch('http://localhost:3000/Visa-Result-Image-Form-Api')
+            .then(res => res.json())
+            .then(data => {
+                setVisa_Image(data)
+            })
+    }, []) // ✅ runs only once
+
+
+
+    console.log('Visa_Image', Visa_Image)
+
+
     return (
         <div >
 
@@ -39,183 +62,75 @@ export default function Work_result_image_section() {
             <div className='  my-5 gap-y-5 border-b-2 border-[#DADADA] pb-10'>
                 {/* Custom Navigation Buttons */}
 
+                {Visa_Image.length > 0 ? (
+                    <Swiper
 
-                <Swiper
-                    
+                        breakpoints={{
 
-                    breakpoints={{
+                            // if width is 640px
 
-                        
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 10
+                            },
 
-                         // if width is 640px
+                            // if width is 768px
 
-                        640: {
-                            slidesPerView:2,
-                            spaceBetween:10
-                        },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 10
+                            },
 
-                         // if width is 768px
+                            // if width is 1024px
 
-                        768: {
-                            slidesPerView:3,
-                            spaceBetween:10
-                        },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 10
+                            },
 
-                         // if width is 1024px
+                            // if width is 1440px
 
-                        1024: {
-                            slidesPerView:4,
-                            spaceBetween:10
-                        },
-
-                         // if width is 1440px
-
-                        1440: {
-                            slidesPerView:4,
-                            spaceBetween:10
-                        },
+                            1440: {
+                                slidesPerView: 4,
+                                spaceBetween: 10
+                            },
 
 
 
-                    }}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
+                        }}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
 
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper mt-10 "
-                    navigation={{
-                        nextEl: ".swiper-button-next-custom",
-                        prevEl: ".swiper-button-prev-custom",
-                    }}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper mt-10 "
+                        navigation={{
+                            nextEl: ".swiper-button-next-custom",
+                            prevEl: ".swiper-button-prev-custom",
+                        }}
+                    >
+                        {Visa_Image.slice(-10).map((data, index) => (
+                            <SwiperSlide key={`${data._id || 'visa'}-${index}`}>
+                                <div className=''>
+                                    <img
+                                        src={data.Choose_Image || ''}
+                                        alt={data.User_Name || "Founder"}
+                                        className="h-[180px] w-full rounded-2xl  "
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
 
-                >
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
+                    </Swiper>
+                ) : (
+                    <p>Loading founders...</p>
+                )}
 
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
 
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <Image
-                                src={passportimage}
-                                alt="Megh cloud"
-
-                                className="h-[180px] w-full rounded-2xl  "
-                            />
-
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
             </div>
 
         </div>

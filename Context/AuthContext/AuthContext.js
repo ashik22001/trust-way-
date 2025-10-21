@@ -22,6 +22,7 @@ export const AuthProvider = ({ children }) => {
     const [company_founder_other_Image, setcompany_founder_other_Image] = useState([])
     const [Visa_Workting_image, setVisa_Workting_image] = useState([])
     const [our_service_Card, setour_service_Card] = useState([])
+    const [Visa_Image, setVisa_Image] = useState([])
     const [our_faq_section, setour_faq_section] = useState([])
 
 
@@ -58,6 +59,7 @@ export const AuthProvider = ({ children }) => {
         company_founder_other_Image, setcompany_founder_other_Image,
         Visa_Workting_image, setVisa_Workting_image,
         our_service_Card, setour_service_Card,
+        Visa_Image, setVisa_Image,
         our_faq_section, setour_faq_section,
 
 

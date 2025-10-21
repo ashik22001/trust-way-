@@ -17,11 +17,14 @@ export default function Other_Founder_Swiper_Images_Form() {
         e.preventDefault();
 
         const form = new FormData(e.target);
-
+        const User_Name = form.get('foundername');
+        const Position_Name = form.get('founder_position');
         const file1 = form.get('image1');
         const Choose_Image = file1 ? await uploadToImgBB(file1) : "";
 
         const Founder_image = {
+            User_Name,
+            Position_Name,
             Choose_Image,
 
         }
@@ -76,16 +79,24 @@ export default function Other_Founder_Swiper_Images_Form() {
                     <h3 className=' text-2xl font-semibold text-center py-10'>Add Other Founder Images</h3>
                 </div>
                 <div>
-                   <form action="" onSubmit={handle_Form_Submit}>
-                     <div className="  gap-3 mx-auto items-center justify-center">
-                        <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Choose Your Image</Label>
-                        <Input className={"h-14"} name='image1' placeholder="Choose your image" type="file" />
-                    </div>
-                    <div className=' py-3'>
-                        <Button className={"text-xl font-semibold py-4"}>Submit</Button>
+                    <form action="" onSubmit={handle_Form_Submit}>
+                        <div className="  gap-3 mx-auto items-center justify-center">
+                            <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}> Name </Label>
+                            <Input className={"h-14"} name='foundername' placeholder="Enter Name" type="text" />
+                        </div>
+                        <div className="  gap-3 mx-auto items-center justify-center">
+                            <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Position</Label>
+                            <Input className={"h-14"} name='founder_position' placeholder="Enter Postion" type="text" />
+                        </div>
+                        <div className="  gap-3 mx-auto items-center justify-center">
+                            <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Choose Your Image</Label>
+                            <Input className={"h-14"} name='image1' placeholder="Choose your image" type="file" />
+                        </div>
+                        <div className=' py-3'>
+                            <Button className={"text-xl font-semibold py-4"}>Submit</Button>
 
-                    </div>
-                   </form>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
