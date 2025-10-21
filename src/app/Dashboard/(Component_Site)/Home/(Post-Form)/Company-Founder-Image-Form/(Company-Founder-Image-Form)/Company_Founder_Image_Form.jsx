@@ -17,12 +17,16 @@ export default function Company_Founder_Image_Form() {
 
         const form = new FormData(e.target);
 
+        const User_Name = form.get('foundername');
+        const Position_Name = form.get('founder_position');
         const file1 = form.get('image1');
         const Choose_Image = file1 ? await uploadToImgBB(file1) : "";
 
         const News_Data = {
+            User_Name,
+            Position_Name,
             Choose_Image,
-            
+
         }
 
         try {
@@ -76,13 +80,21 @@ export default function Company_Founder_Image_Form() {
                 </div>
                 <form action="" onSubmit={handle_Form_Submit}>
                     <div className="  gap-3 mx-auto items-center justify-center">
-                    <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Choose Your Image</Label>
-                    <Input className={"h-14"} name='image1' placeholder="Choose your image" type="file" />
-                </div>
-                <div className=' py-3'>
-                    <Button className={"text-xl font-semibold py-4"}>Submit</Button>
+                        <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}> Name </Label>
+                        <Input className={"h-14"} name='foundername' placeholder="Enter Name" type="text" />
+                    </div>
+                    <div className="  gap-3 mx-auto items-center justify-center">
+                        <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Position</Label>
+                        <Input className={"h-14"} name='founder_position' placeholder="Enter Postion" type="text" />
+                    </div>
+                    <div className="  gap-3 mx-auto items-center justify-center">
+                        <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Choose Your Image</Label>
+                        <Input className={"h-14"} name='image1' placeholder="Choose your image" type="file" />
+                    </div>
+                    <div className=' py-3'>
+                        <Button className={"text-xl font-semibold py-4"}>Submit</Button>
 
-                </div>
+                    </div>
                 </form>
             </div>
         </div>
