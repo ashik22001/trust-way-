@@ -23,7 +23,7 @@ export default function Country_Data_Form_List() {
 
                 <Button>
                      <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/Dashboard/Home/Navbar-News-Form'> Post New Country Name</Link>
+                    <Link href='/Dashboard/Work-Visa/Country-Data-Form'> Post New Country Name</Link>
                 </Button>
 
             </div>
