@@ -8,17 +8,42 @@ import Link from "next/link"
 
 import { TiThMenu } from "react-icons/ti";
 import { MdClose } from 'react-icons/md'
-import { AuthContext } from '../../../../Context/AuthContext/AuthContext'
+import { useAuth } from '../../../../Context/AuthContext/AuthContext'
 
 
 export default function Navbar() {
 
 
+
+  // context api state coll 
+
+  const { navbar_news, setnavbar_news } = useAuth()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const {a} = useContext(AuthContext)
 
-  console.log(a)
+
+  // fetch navbar api all data 
+
+
+  React.useEffect(() => {
+    fetch('http://localhost:3000/Navbar-News-Form-api')
+      .then(res => res.json())
+      .then(data => {
+        setnavbar_news(data)
+      })
+  }, []) // ✅ runs only once
+
+
+
+  console.log('navbar data', navbar_news)
+
+
+  // get navbar last latest news 
+
+  const latest_News = navbar_news?.length > 0 ? navbar_news[navbar_news.length - 1].News_Title || " " : "No data avbailable"
+
+  console.log('last text', latest_News)
+
 
 
   return (
@@ -41,7 +66,7 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:col-span-9">
           <Marquee>
             <h4 className="text-white text-lg font-semibold">
-             {a}
+              {latest_News}
             </h4>
           </Marquee>
         </div>
@@ -91,19 +116,19 @@ export default function Navbar() {
             </li>
             <li className='text-xl font-semibold text-white px-3 border-b border-white py-2'>
               <Link href="/Study-Visa" className="text-white hover:text-blue-300">
-              Study Visa
-            </Link>
+                Study Visa
+              </Link>
             </li>
             <li className='text-xl font-semibold text-white px-3 border-b border-white py-2'>
-             Legalization in Bangladesh
+              Legalization in Bangladesh
             </li>
             <li className='text-xl font-semibold text-white px-3 border-b border-white py-2'>
-             Appointment in Global
+              Appointment in Global
             </li>
             <li className='text-xl font-semibold text-white px-3 border-b border-white py-2'>
-             Tunkey Visa in Bangladesh
+              Tunkey Visa in Bangladesh
             </li>
-            
+
           </ul>
         </div>
       )}

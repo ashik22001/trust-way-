@@ -32,12 +32,13 @@ export default function News_Table() {
 
 
     React.useEffect(() => {
-        fetch('http://localhost:3000/Navbar-News-Form-api')
-            .then(res => res.json())
-            .then(data => {
-                setnavbar_news(data)
-            })
+  fetch('http://localhost:3000/Navbar-News-Form-api')
+    .then(res => res.json())
+    .then(data => {
+      setnavbar_news(data)
     })
+}, []) // ✅ runs only once
+
 
 
     console.log('navbar data', navbar_news)

@@ -21,6 +21,7 @@ export default function Home_Footer() {
 
                             src={logo}
                             className='h-16 w-40'
+                            alt='image logo'
                         >
 
                         </Image>
