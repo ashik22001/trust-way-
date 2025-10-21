@@ -1,3 +1,4 @@
+'use client'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import React from 'react'
@@ -15,10 +16,34 @@ import {
 import Image from 'next/image'
 import { FaRegEdit } from 'react-icons/fa'
 import { MdDeleteForever } from 'react-icons/md'
+import { useAuth } from '../../../../../../../../Context/AuthContext/AuthContext'
 
 export default function Visa_jobs_vacancies_Section_Data_List() {
-  return (
-    <div className="w-full px-5">
+
+
+    // context api state coll 
+
+    const { visa_job_vacations, setvisa_job_vacations } = useAuth()
+
+
+    // fetch navbar api all data 
+
+
+    React.useEffect(() => {
+        fetch('http://localhost:3000/Visa-jobs-vacancies-Section-Data-Api')
+            .then(res => res.json())
+            .then(data => {
+                setvisa_job_vacations(data)
+            })
+    }, []) // ✅ add empty array to run once
+
+
+    console.log('visa_job_vacations', visa_job_vacations)
+
+
+
+    return (
+        <div className="w-full px-5">
             <div className="flex items-center py-4 ">
 
                 <Button>
@@ -33,11 +58,15 @@ export default function Visa_jobs_vacancies_Section_Data_List() {
                     <TableHeader>
                         <TableRow >
                             <TableHead  >
-                                Images
+                                Index
                             </TableHead>
-                            <TableHead className={'text-center'} >
-                                Posted Date
+                            <TableHead  >
+                                Visa Vacations Name
                             </TableHead>
+                            <TableHead  >
+                                Image
+                            </TableHead>
+                           
                             <TableHead className={'text-center'} >
                                 Update
                             </TableHead>
@@ -47,16 +76,22 @@ export default function Visa_jobs_vacancies_Section_Data_List() {
                         </TableRow>
                     </TableHeader>
                     <TableBody>
-                        <TableRow>
+                      {
+                        visa_job_vacations.map((data, index) =>(
+                              <TableRow key={data._id || index}>
                             <TableCell cl>
-                                <Image
-                                    src={image1}
+                               {index + 1}
+                            </TableCell>
+                            <TableCell cl>
+                              {data.Visa_Vactaion_Name}
+                            </TableCell>
+                            <TableCell cl>
+                                <img
+                                    src={data.Choose_Image}
                                     className=" h-28  w-28 rounded-lg"
-                                ></Image>
+                                ></img>
                             </TableCell>
-                            <TableCell className={'text-center'} >
-                                5.10.25
-                            </TableCell>
+                            
                             <TableCell className={'text-center'} >
                                 <Link href="/">
                                     <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
@@ -70,52 +105,9 @@ export default function Visa_jobs_vacancies_Section_Data_List() {
                                 </Link>
                             </TableCell>
                         </TableRow>
-                        <TableRow>
-                            <TableCell cl>
-                                <Image
-                                    src={image1}
-                                    className=" h-28  w-28 rounded-lg"
-                                ></Image>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                5.10.25
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell cl>
-                                <Image
-                                    src={image1}
-                                    className=" h-28  w-28 rounded-lg"
-                                ></Image>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                5.10.25
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                        </TableRow>
+                        ))
+                      }
+                        
 
 
                     </TableBody>
@@ -143,5 +135,5 @@ export default function Visa_jobs_vacancies_Section_Data_List() {
                 </div>
             </div>
         </div>
-  )
+    )
 }

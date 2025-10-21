@@ -17,10 +17,34 @@ import { FaRegEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
 import { TiPlus } from "react-icons/ti";
 import Image from "next/image"
+import { useAuth } from "../../../../../../../Context/AuthContext/AuthContext"
 
 export default function Our_Service_Table() {
-  return (
-    <div className="w-full px-5">
+
+
+    // context api state coll 
+
+    const { our_service_Card, setour_service_Card, } = useAuth()
+
+
+    // fetch navbar api all data 
+
+
+    React.useEffect(() => {
+        fetch('http://localhost:3000/Our-Service-Form-Api')
+            .then(res => res.json())
+            .then(data => {
+                setour_service_Card(data)
+            })
+    }, []) // ✅ add empty array to run once
+
+
+
+    console.log('our service card', our_service_Card)
+
+
+    return (
+        <div className="w-full px-5">
             <div className="flex items-center py-4 ">
 
                 <Button>
@@ -34,11 +58,12 @@ export default function Our_Service_Table() {
                     <TableHeader>
                         <TableRow >
                             <TableHead  >
+                                Index
+                            </TableHead>
+                            <TableHead  >
                                 Service Title
                             </TableHead>
-                            <TableHead className={'text-center'} >
-                                Posted Date
-                            </TableHead>
+                            
                             <TableHead className={'text-center'} >
                                 Update
                             </TableHead>
@@ -48,29 +73,34 @@ export default function Our_Service_Table() {
                         </TableRow>
                     </TableHeader>
                     <TableBody>
-                        <TableRow>
-                            <TableCell cl>
-                               Lorem ipsum dolor sit amet.
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                5.10.25
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
+                        {
+                            our_service_Card.map((data, index) => (
+                                <TableRow key={data._id || index}>
+                                    <TableCell cl>
+                                        {index + 1}
+                                    </TableCell>
+                                    <TableCell cl>
+                                        {data.Service_Title}
+                                    </TableCell>
+                                  
+                                    <TableCell className={'text-center'} >
+                                        <Link href="/">
+                                            <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
 
-                                </Link>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
+                                        </Link>
+                                    </TableCell>
+                                    <TableCell className={'text-center'} >
+                                        <Link href="/">
+                                            <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
 
-                                </Link>
-                            </TableCell>
-                        </TableRow>
-                       
-                       
-                       
+                                        </Link>
+                                    </TableCell>
+                                </TableRow>
+                            ))
+                        }
+
+
+
 
                     </TableBody>
                 </Table>
@@ -97,5 +127,5 @@ export default function Our_Service_Table() {
                 </div>
             </div>
         </div>
-  )
+    )
 }

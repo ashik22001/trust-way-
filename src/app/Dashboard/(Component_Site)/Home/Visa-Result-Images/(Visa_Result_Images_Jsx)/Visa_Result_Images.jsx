@@ -17,10 +17,34 @@ import { FaRegEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
 import { TiPlus } from "react-icons/ti";
 import Image from "next/image"
+import { useAuth } from "../../../../../../../Context/AuthContext/AuthContext"
 
 
 
 function Visa_Result_Images() {
+
+    
+            // context api state coll 
+        
+            const { Visa_Workting_image, setVisa_Workting_image, } = useAuth()
+        
+        
+            // fetch navbar api all data 
+        
+        
+            React.useEffect(() => {
+                fetch('http://localhost:3000/Visa-Result-Image-Form-Api')
+                    .then(res => res.json())
+                    .then(data => {
+                        setVisa_Workting_image(data)
+                    })
+            }, []) // ✅ add empty array to run once
+        
+        
+        
+            console.log('Visa Workting image', Visa_Workting_image)
+
+
   return (
     <div className="w-full px-5">
             <div className="flex items-center py-4 ">
@@ -31,16 +55,18 @@ function Visa_Result_Images() {
                 </Button>
 
             </div>
-            <div className="overflow-hidden rounded-md border">
+              <div className="overflow-hidden rounded-md border">
                 <Table>
                     <TableHeader>
                         <TableRow >
                             <TableHead  >
+                                Index
+                            </TableHead>
+                          
+                            <TableHead  >
                                 Images
                             </TableHead>
-                            <TableHead className={'text-center'} >
-                                Posted Date
-                            </TableHead>
+
                             <TableHead className={'text-center'} >
                                 Update
                             </TableHead>
@@ -50,56 +76,33 @@ function Visa_Result_Images() {
                         </TableRow>
                     </TableHeader>
                     <TableBody>
-                        <TableRow>
-                            <TableCell cl>
-                                <Image
-                                src={image1}
-                                className=" h-28  w-28 rounded-lg"
-                                ></Image>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                5.10.25
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
+                        {Visa_Workting_image.map((data, index) => (
+                            <TableRow key={data._id || index}>
+                                <TableCell>
+                                    {index + 1}
+                                </TableCell>
+                                <TableCell>
+                                    <img
+                                        src={data.Choose_Image}
+                                        alt="Founder"
+                                        className="h-28 w-28 rounded-lg object-cover"
+                                    />
 
-                                </Link>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell cl>
-                                <Image
-                                src={image1}
-                                className=" h-28  w-28 rounded-lg"
-                                ></Image>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                5.10.25
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><FaRegEdit className="text-green-700 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                            <TableCell className={'text-center'} >
-                                <Link href="/">
-                                    <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
-
-                                </Link>
-                            </TableCell>
-                        </TableRow>
-                       
-                       
-
+                                </TableCell>
+                                <TableCell className="text-center">
+                                    <Link href="/">
+                                        <FaRegEdit className="text-green-700 text-2xl mx-auto" />
+                                    </Link>
+                                </TableCell>
+                                <TableCell className="text-center">
+                                    <Link href="/">
+                                        <MdDeleteForever className="text-red-800 text-2xl mx-auto" />
+                                    </Link>
+                                </TableCell>
+                            </TableRow>
+                        ))}
                     </TableBody>
+
                 </Table>
             </div>
             <div className="flex items-center justify-end space-x-2 py-4">
@@ -128,3 +131,7 @@ function Visa_Result_Images() {
 }
 
 export default Visa_Result_Images
+
+
+
+

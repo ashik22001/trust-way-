@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label"
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import Swal from 'sweetalert2'
+import uploadToImgBB from '@/app/ImageUpload_Site/UploadImageBBImage'
 
 
 export default function Other_Founder_Swiper_Images_Form() {
