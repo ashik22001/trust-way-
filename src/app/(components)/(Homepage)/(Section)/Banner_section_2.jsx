@@ -1,10 +1,19 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import Image from 'next/image'
+import AOS from 'aos';
 import meghimage from '../../../../../public/images/oblako.webp'
 import meghmiddleimage from '../../../../../public/images/oblako_2.jpeg'
 
 
 export default function Banner_section_2() {
+  useEffect(() => {
+                AOS.init({
+                  duration: 1000, // Animation duration in ms
+                  once: true,     // Animation runs only once
+                  easing: "ease-in-out", // Optional
+                });
+              }, []);
   return (
     <div className="relative">
       {/* text section div */}
@@ -18,7 +27,7 @@ export default function Banner_section_2() {
       <div className="bg-[url(/images/original.png)] h-lvh md:h-[600px] lg:h-[600px]  w-full bg-cover bg-center "></div>
 
       {/* megh image */}
-      <div className="absolute -top-5 md:-top-8 lg:-top-5 z-30 hidden md:block ">
+      <div className="absolute -top-5 md:-top-8 lg:-top-5 z-30 hidden md:block" data-aos="fade-right" >
         <Image
           src={meghimage}
           alt="Megh cloud"
@@ -27,7 +36,7 @@ export default function Banner_section_2() {
           className="h-72 w-72 object-contain "
         />
       </div>
-      <div className="absolute bottom-0 md:-bottom-0  lg:bottom-0 left-1/2 -translate-x-1/2 z-30 ">
+      <div className="absolute bottom-0 md:-bottom-0  lg:bottom-0 left-1/2 -translate-x-1/2 z-30 "data-aos="fade-right" >
         <Image
           src={meghmiddleimage}
           alt="Megh cloud"

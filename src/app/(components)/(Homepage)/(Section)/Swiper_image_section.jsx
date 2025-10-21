@@ -1,8 +1,8 @@
 "use client"
+import React, { useEffect } from 'react'
 
 import Image from 'next/image'
-import React from 'react'
-
+import AOS from 'aos';
 import founderimage from '../../../../../public/images/dmitriy_1.webp'
 
 // Import Swiper React components
@@ -22,17 +22,27 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 
 export default function Swiper_image_section() {
+    
+     useEffect(() => {
+            AOS.init({
+              duration: 1000, // Animation duration in ms
+              once: true,     // Animation runs only once
+              easing: "ease-in-out", // Optional
+            });
+          }, []);
+    
+
     return (
         <div>
             {/* text  section */}
 
             <div className='  '>
-                <h1 className='text-center font-semibold text-3xl md:text-4xl text-black py-10 border-b  border-black mb-10 mx-5'>The structure of our company</h1>
+                <h1 className='text-center font-semibold text-3xl md:text-4xl text-black py-10 border-b  border-black mb-10 mx-5' data-aos="fade-right">The structure of our company</h1>
             </div>
             {/* image section */}
             <div className=' flex items-center justify-center border-b border-black mx-1 md:mx-3 pb-3'>
                 <div className=' grid grid-cols-2 md:grid-cols-4 gap-x-1.5 md:gap-x-5 px-5 py-10 '>
-                    <div className=''>
+                    <div className=''data-aos="zoom-in">
                         <Image
                             src={founderimage}
                             alt="Megh cloud"
@@ -44,7 +54,7 @@ export default function Swiper_image_section() {
                             <h5 className='text-sm text-[16px] font-semibold text-black'>CO-FOUNDER & CO-CEO</h5>
                         </div>
                     </div>
-                    <div className=''>
+                    <div className=''data-aos="zoom-in">
                         <Image
                             src={founderimage}
                             alt="Megh cloud"
@@ -62,7 +72,7 @@ export default function Swiper_image_section() {
             {/* image section */}
             <div className=' flex flex-row items-center justify-center border-b border-black mx-1 md:mx-3 pb-3'>
                 <div className=' grid grid-cols-2 md:grid-cols-4 gap-x-1.5 md:gap-x-5 px-5 py-10 '>
-                    <div className=''>
+                    <div className=''data-aos="zoom-in">
                         <Image
                             src={founderimage}
                             alt="Megh cloud"
@@ -74,7 +84,7 @@ export default function Swiper_image_section() {
                             <h5 className='text-sm text-[16px] font-semibold text-black'>CO-FOUNDER & CO-CEO</h5>
                         </div>
                     </div>
-                    <div className=''>
+                    <div className=''data-aos="zoom-in">
                         <Image
                             src={founderimage}
                             alt="Megh cloud"
@@ -91,7 +101,7 @@ export default function Swiper_image_section() {
 
 
             {/* image slide section */}
-            <div className=' mx-5 md:mx-10  lg:mx-20 pb-3 my-10  gap-y-5'>
+            <div className=' mx-5 md:mx-10  lg:mx-20 pb-3 my-10  gap-y-5'data-aos="fade-right">
                 {/* Custom Navigation Buttons */}
                 <div className=" -top-10 right-0 flex space-x-3 z-20 ">
                     <button className="swiper-button-prev-custom bg-gray-300 hover:bg-gray-400 text-black px-4 py-3 rounded-full text-3xl font-sembold">

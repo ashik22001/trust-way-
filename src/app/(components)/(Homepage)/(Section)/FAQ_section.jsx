@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 
 import {
   Accordion,
@@ -6,9 +7,18 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import AOS from 'aos';
 
 
 export default function FAQ_section() {
+   useEffect(() => {
+              AOS.init({
+                duration: 1000, // Animation duration in ms
+                once: true,     // Animation runs only once
+                easing: "ease-in-out", // Optional
+              });
+            }, []);
+      
   return (
     <div>
       {/* header text section  */}
@@ -20,7 +30,7 @@ export default function FAQ_section() {
 
       {/* accodion section */}
 
-      <div className=' px-5 md:px-10 lg:px-20 pb-10'>
+      <div className=' px-5 md:px-10 lg:px-20 pb-10'data-aos="fade-right" >
         <Accordion
           type="single"
           collapsible
