@@ -23,7 +23,7 @@ export default function Visa_jobs_vacancies_Section_Data_List() {
 
                 <Button>
                     <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/Dashboard/Home/Company-Founder-Image-Form'> Post Founder New Images</Link>
+                    <Link href='/Dashboard/Work-Visa/Visa-jobs-vacancies-Section-Data-Form'> Add New Data</Link>
 
                 </Button>
 

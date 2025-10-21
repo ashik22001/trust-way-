@@ -113,11 +113,6 @@ function Deshboard_Menu() {
               <li className={`${menuItemClass(isActive('/Dashboard/Home/Other-Founder-Swiper-Images'))} xl:text-lg lg:text-[16px]`}>
                 <Link href="/Dashboard/Home/Other-Founder-Swiper-Images" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Countrys Popular Place Section</Link>
               </li>
-              <li className={`${menuItemClass(isActive('/Dashboard/Home/Other-Founder-Swiper-Images'))} xl:text-lg lg:text-[16px]`}>
-                <Link href="/Dashboard/Home/Other-Founder-Swiper-Images" className=' text-black hover:border-b border-blue-700 hover:text-blue-700 text-sm'>Countrys Popular Place Section</Link>
-              </li>
-
-
             </ul>
           )}
         </li>

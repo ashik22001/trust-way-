@@ -23,7 +23,7 @@ export default function Coutry_Visa_Conditions_Section() {
 
                 <Button>
                     <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/Dashboard/Home/Company-Founder-Image-Form'> Post Founder  Images</Link>
+                    <Link href='/Dashboard/Work-Visa/Coutry-Visa-Conditions-Section-Form'> Add Country New Data</Link>
 
                 </Button>
 

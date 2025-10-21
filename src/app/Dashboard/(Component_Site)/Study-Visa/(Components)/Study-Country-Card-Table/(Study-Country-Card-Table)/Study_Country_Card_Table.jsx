@@ -23,7 +23,7 @@ export default function Popular_Place_Swiper_Form() {
 
                 <Button>
                     <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/Dashboard/Home/Company-Founder-Image-Form'> Post Founder  Images</Link>
+                    <Link href='/Dashboard/Study-Visa/Study-Country-Card-Form'> Post Founder  Images</Link>
 
                 </Button>
 

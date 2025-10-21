@@ -23,7 +23,7 @@ export default function Study_Our_Service_Table() {
 
                 <Button>
                     <span className=" text-4xl text-white"><TiPlus /></span>
-                    <Link href='/Dashboard/Study-Visa/Study-Our-Service-Form'> Post Founder  Images</Link>
+                    <Link href='/Dashboard/Study-Visa/Study-Our-Service-Form'> Add Service</Link>
 
                 </Button>
 
