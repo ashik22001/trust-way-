@@ -1,8 +1,9 @@
-import React from 'react'
+// src/app/Dashboard/page.js
+'use client';
 
-export default function page() {
-  return (
-    <div>
-    </div>
-  )
+import React from 'react';
+import PrivateRoute from '../../../Context/AuthContext/PrivateRouter';
+
+export default function Page() {
+  return <PrivateRoute />;
 }
