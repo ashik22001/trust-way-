@@ -1,14 +1,17 @@
 "use client"
 
-// import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
-// import { auth } from "../lib/firebase";
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { app } from "../../Firebase/firebase.config";
+
 
 const { createContext, useState, useEffect, useContext } = require("react")
 
 
-// const provider = new GoogleAuthProvider();
+const provider = new GoogleAuthProvider();
 
 export const AuthContext = createContext();
+
+const auth = getAuth(app);
 
 
 
@@ -44,8 +47,32 @@ export const AuthProvider = ({ children }) => {
 
 
 
+    // firebase state 
 
-    const a = 'this is context page js'
+    const [users, setUsers] = useState(null)
+    const [loading, setLoading] = useState(true);
+
+
+
+
+
+    // log out
+    const Logout = () => {
+        setLoading(true);
+        return signOut(auth);
+
+    }
+
+    // sign in with google
+
+    const SignInwithGoogle = () => {
+        setLoading(true);
+        return signInWithPopup(auth, provider);
+
+    }
+
+
+
 
 
     const userInfo = {
@@ -79,12 +106,17 @@ export const AuthProvider = ({ children }) => {
         About_Say, setAbout_Say,
 
 
+        // firebase auth function data 
+
+        SignInwithGoogle,
+        Logout,
 
 
+        // users state 
 
+        users, setUsers,
+        loading, setLoading
 
-
-        a
 
 
 
@@ -108,6 +140,15 @@ export const AuthProvider = ({ children }) => {
 
 
     // }, [])
+
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            setUsers(user || null);
+            setLoading(false);
+        });
+        return () => unsubscribe();
+    }, [auth]);
 
 
 
