@@ -1,27 +1,96 @@
+
+
+
+'use client'
 import React from 'react'
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Button } from '@/components/ui/button'
+import { Textarea } from '@/components/ui/textarea'
+import Swal from 'sweetalert2'
+import uploadToImgBB from '@/app/ImageUpload_Site/UploadImageBBImage'
 
-export default function Dashboard_Navbar() {
-  return (
-    <div className=' rounded-sm shadow-sm border-gray-400 bg-[#EDEFF1] sticky z-40'>
-       <div className=' gird grid-cols-2'>
-         {/* left site */}
-        <div>
-            <ul className=' px-4 py-2 flex items-center  space-x-3'>
-                <li className=' text-[16px] font-semibold text-black hover:text-blue-700 hover:border-b-2 hover:border-blue-700 bg-gray-300 px-2 y-1 rounded-sm'>Home</li>
-                <li className=' text-[16px] font-semibold text-black hover:text-blue-700 hover:border-b-2 hover:border-blue-700 bg-gray-300 px-2 y-1 rounded-sm'>Work Visa</li>
-                <li className=' text-[16px] font-semibold text-black hover:text-blue-700 hover:border-b-2 hover:border-blue-700 bg-gray-300 px-2 y-1 rounded-sm'>Study Visa</li>
-                <li className=' text-[16px] font-semibold text-black hover:text-blue-700 hover:border-b-2 hover:border-blue-700 bg-gray-300 px-2 y-1 rounded-sm'>Turist Visa</li>
-                <li className=' text-[16px] font-semibold text-black hover:text-blue-700 hover:border-b-2 hover:border-blue-700 bg-gray-300 px-2 y-1 rounded-sm'>Home</li>
-                
-            </ul>
-        </div>
+
+export default function Popular_Place_Swiper_Form() {
+
+
+    const handle_Form_Submit = async (e) => {
+
+        e.preventDefault();
+
+        const form = new FormData(e.target);
         
-        {/* right site  */}
+        const file1 = form.get('image1');
+        const Choose_Image = file1 ? await uploadToImgBB(file1) : "";
 
-        <div>
+        const Data = {
+            
+            Choose_Image,
 
+        }
+
+        try {
+            const response = await fetch('http://localhost:3000/Popular-Destination-Image-Swiper-Api', {
+                method: "POST",
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(Data),
+
+            });
+
+            const res = await response.json();
+
+            if (res.insertedId) {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Your Post Successfully Added!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+
+                e.target.reset();
+            } else {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Something went wrong.',
+                    icon: 'error',
+                    confirmButtonText: 'Try again'
+                });
+            }
+        }
+
+        catch (error) {
+
+            Swal.fire({
+                title: 'Network Error!',
+                text: error.message,
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+
+        }
+    }
+
+
+    return (
+        <div className=' h-full w-full px-10 pt-10 mb-20'>
+            <div className=' rounded-2xl shadow-md mx-auto items-center justify-center px-10 pb-10'>
+                <div className='mx-auto items-center justify-center'>
+                    <h3 className=' text-2xl font-semibold text-center py-10'>Add Your Text</h3>
+                </div>
+                <form action="" onSubmit={handle_Form_Submit}>
+                   
+                     
+                    <div className="  gap-3 mx-auto items-center justify-center">
+                        <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Choose Image</Label>
+                          <Input className={"h-14"} name='image1' placeholder="Choose your image" type="file" />
+                    </div>
+                    <div className=' py-3'>
+                        <Button className={"text-xl font-semibold py-4"}>Submit</Button>
+
+                    </div>
+                </form>
+            </div>
         </div>
-       </div>
-    </div>
-  )
+    )
 }
