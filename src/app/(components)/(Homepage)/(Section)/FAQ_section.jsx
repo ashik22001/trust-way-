@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 import {
@@ -6,9 +7,33 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { useAuth } from '../../../../../Context/AuthContext/AuthContext'
 
 
 export default function FAQ_section() {
+
+
+  // context api state coll 
+
+  const { our_faq_section, setour_faq_section, } = useAuth()
+
+
+
+  // fetch company founder image
+
+
+  React.useEffect(() => {
+    fetch('http://localhost:3000/Faq-Data-Form-Api')
+      .then(res => res.json())
+      .then(data => {
+        setour_faq_section(data)
+      })
+  }, []) // ✅ runs only once
+
+
+
+  console.log('our_faq_section', our_faq_section)
+
   return (
     <div>
       {/* header text section  */}
@@ -25,58 +50,25 @@ export default function FAQ_section() {
           type="single"
           collapsible
           className="w-full space-y-3"
-          defaultValue="item-1"
+          defaultValue="item-0"
         >
-          <div className=' '>
-            <AccordionItem value="item-1" className="bg-[#495F77] rounded-lg">
-            <AccordionTrigger className={" px-5 text-white font-xl font-bold"}>Product Information</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-4 text-balance bg-[#EBEBEB] px-5 py-3">
-              <p>
-                Our flagship product combines cutting-edge technology with sleek
-                design. Built with premium materials, it offers unparalleled
-                performance and reliability.
-              </p>
-              <p>
-                Key features include advanced processing capabilities, and an
-                intuitive user interface designed for both beginners and experts.
-              </p>
-            </AccordionContent>
-          </AccordionItem>
-          </div>
+          {our_faq_section.slice(-10).map((data, index) => (
+            <div className='' key={data._id || index}>
+              <AccordionItem value={`item-${index}`} className="bg-[#495F77] rounded-lg">
+                <AccordionTrigger className={" px-5 text-white font-xl font-bold"}>{data.Faq_Question}</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance bg-[#EBEBEB] px-5 py-3">
 
-          <div>
-            <AccordionItem value="item-1" className="bg-[#495F77] rounded-lg">
-            <AccordionTrigger className={" px-5 text-white font-xl font-bold"}>Product Information</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-4 text-balance bg-[#EBEBEB] px-5 py-3">
-              <p>
-                Our flagship product combines cutting-edge technology with sleek
-                design. Built with premium materials, it offers unparalleled
-                performance and reliability.
-              </p>
-              <p>
-                Key features include advanced processing capabilities, and an
-                intuitive user interface designed for both beginners and experts.
-              </p>
-            </AccordionContent>
-          </AccordionItem>
-          </div>
-          <div>
-            <AccordionItem value="item-1" className="bg-[#495F77] rounded-lg">
-            <AccordionTrigger className={" px-5 text-white font-xl font-bold"}>Product Information</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-4 text-balance bg-[#EBEBEB] px-5 py-3">
-              <p>
-                Our flagship product combines cutting-edge technology with sleek
-                design. Built with premium materials, it offers unparalleled
-                performance and reliability.
-              </p>
-              <p>
-                Key features include advanced processing capabilities, and an
-                intuitive user interface designed for both beginners and experts.
-              </p>
-            </AccordionContent>
-          </AccordionItem>
-          </div>
-          
+                  <p>
+                    {data.Faq_Answer}
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </div>
+          ))}
+
+
+
+
         </Accordion>
       </div>
     </div>

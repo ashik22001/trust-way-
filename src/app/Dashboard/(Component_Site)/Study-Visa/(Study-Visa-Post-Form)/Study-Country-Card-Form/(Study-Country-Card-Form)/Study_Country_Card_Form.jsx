@@ -17,17 +17,18 @@ export default function Study_Country_Card_Form() {
         e.preventDefault();
 
         const form = new FormData(e.target);
-
+        const Country_name = form.get('Country_name')
         const file1 = form.get('image1');
         const Choose_Image = file1 ? await uploadToImgBB(file1) : "";
 
         const Data_Image = {
+            Country_name,
             Choose_Image,
 
         }
 
         try {
-            const response = await fetch('http://localhost:3000/Popular-Destination-Image-Swiper-Api', {
+            const response = await fetch('http://localhost:3000/Study-Country-Card-Form', {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(Data_Image),
@@ -77,7 +78,11 @@ export default function Study_Country_Card_Form() {
                 </div>
                 <form action="" onSubmit={handle_Form_Submit}>
                     <div className="  gap-3 mx-auto items-center justify-center">
-                        <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Choose Your Image</Label>
+                        <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Country Name</Label>
+                        <Input className={"h-14"} name='Country_name' placeholder="Country Name" type="text" />
+                    </div>
+                    <div className="  gap-3 mx-auto items-center justify-center">
+                        <Label htmlFor="picture" className={"text-lg font-semibold pb-3"}>Choose Country Flag Image</Label>
                         <Input className={"h-14"} name='image1' placeholder="Choose your image" type="file" />
                     </div>
                     <div className=' py-3'>

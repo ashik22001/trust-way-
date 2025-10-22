@@ -20,9 +20,35 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { useAuth } from '../../../../../../Context/AuthContext/AuthContext'
 
 
 export default function Country_Category() {
+
+
+  // context api state coll 
+
+  const { Country_Name, setCountry_Name, } = useAuth()
+
+
+
+  // fetch navbar api all data 
+
+
+  React.useEffect(() => {
+    fetch('http://localhost:3000/Country-Data-Form-Api')
+      .then(res => res.json())
+      .then(data => {
+        setCountry_Name(data)
+      })
+  }, []) // ✅ runs only once
+
+
+
+  console.log('Country_Name', Country_Name)
+
+
+
   return (
     <div className=' bg-[#2283C4]'>
       {/* header text  */}
@@ -45,97 +71,44 @@ export default function Country_Category() {
         </div>
 
         <div className=' px-28 -mt-12 pb-3'>
-          <Swiper
-            slidesPerView={1} // default for mobile
-            slidesPerGroup={1}
-            spaceBetween={20}
-            cssMode={true}
-            navigation={{
-              nextEl: ".swiper-button-next-custom",
-              prevEl: ".swiper-button-prev-custom",
-            }}
-            pagination={{ clickable: true }}
-            mousewheel={true}
-            keyboard={true}
-            modules={[Mousewheel, Keyboard, Navigation]}
-            className="mySwiper"
-            breakpoints={{
-              // when window width is >= 640px (small)
-              640: {
-                slidesPerView: 1,
-              },
-              // when window width is >= 768px (medium)
-              768: {
-                slidesPerView: 3,
-              },
-              // when window width is >= 1024px (large)
-              1024: {
-                slidesPerView: 5,
-              },
-              // when window width is >= 1280px (xl)
-              1440: {
-                slidesPerView: 6,
-              },
-            }}
-          >
-            <SwiperSlide >
-                  <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#01018b] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
-                      EU Country
-                    </Button>
-                  </div>
-                </SwiperSlide>
-                 <SwiperSlide >
-                  <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
-                      Australia
-                    </Button>
-                  </div>
-                </SwiperSlide>
-                 <SwiperSlide >
-                  <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
-                      Canada
-                    </Button>
-                  </div>
-                </SwiperSlide>
-                 <SwiperSlide >
-                  <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
-                      England
-                    </Button>
-                  </div>
-                </SwiperSlide>
-                 <SwiperSlide >
-                  <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
-                      New Zealand
-                    </Button>
-                  </div>
-                </SwiperSlide>
-                 <SwiperSlide >
-                  <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
-                      Dubai 
-                    </Button>
-                  </div>
-                </SwiperSlide>
-                 <SwiperSlide >
-                  <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#01018b] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
-                      Qatar
-                    </Button>
-                  </div>
-                </SwiperSlide>
-                 <SwiperSlide >
-                  <div className="flex justify-center">
-                    <Button className="text-lg font-[400] text-white bg-[#01018b]  border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
-                      Balkan semi-detached
-                    </Button>
-                  </div>
-                </SwiperSlide>
-  
-          </Swiper>
+          {
+            Country_Name.length > 0 ? (
+              <Swiper
+                slidesPerView={1}
+                slidesPerGroup={1}
+                spaceBetween={20}
+                cssMode={true}
+                navigation={{
+                  nextEl: ".swiper-button-next-custom",
+                  prevEl: ".swiper-button-prev-custom",
+                }}
+                
+                mousewheel={true}
+                keyboard={true}
+                modules={[Mousewheel, Keyboard, Navigation]}
+                className="mySwiper"
+                breakpoints={{
+                  640: { slidesPerView: 1 },
+                  768: { slidesPerView: 3 },
+                  1024: { slidesPerView: 5 },
+                  1440: { slidesPerView: 6 },
+                }}
+              >
+                {Country_Name.map((data, index) => (
+                  <SwiperSlide key={data._id || index}>
+                    <div className="flex justify-center">
+                      <Button className="text-lg font-[400] text-white bg-[#01018b] border-none h-14 px-8 hover:bg-[#E9E9E9] hover:text-black hover:shadow-md">
+                        {data.Country_Name}
+                      </Button>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            ) : (
+              <p>No Data Found</p>
+            )
+          }
+
 
 
 

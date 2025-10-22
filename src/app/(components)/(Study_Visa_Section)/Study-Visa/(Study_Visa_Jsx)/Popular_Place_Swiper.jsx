@@ -20,9 +20,34 @@ import imagecaruse6 from '../../../../../../public/Study_Visa_image/kipr (1).jpg
 import { FreeMode, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { Navigation, Autoplay } from 'swiper/modules';
+import { useAuth } from '../../../../../../Context/AuthContext/AuthContext';
+import { useEffect } from 'react';
 
 
 export default function Popular_Place_Swiper() {
+
+
+    // context api state coll 
+
+    const { Popular_Destination_Image, setPopular_Destination_Image, } = useAuth()
+
+
+
+    // fetch navbar api all data 
+
+
+    useEffect(() => {
+        fetch('http://localhost:3000/Popular-Destination-Image-Swiper-Api')
+            .then(res => res.json())
+            .then(data => {
+                setPopular_Destination_Image(data)
+            })
+    }, []) // ✅ runs only once
+
+
+
+    console.log('Popular_Destination_Image', Popular_Destination_Image)
+
     return (
         <div className='bg-gradient-to-r from-[#040A63] to-[#2860A2] '>
             {/* header text  */}
@@ -35,121 +60,78 @@ export default function Popular_Place_Swiper() {
             {/* carusel section  */}
 
             <div className=' py-10 px-5 md:px-10 lg:px-20'>
-                <Swiper
-                    
-                    freeMode={true}
-                    pagination={{
-                        clickable: true,
-                    }}
+                {
+                    Popular_Destination_Image.length > 0 ? (
 
-                    breakpoints={{
+                        <Swiper
 
-                        
+                            freeMode={true}
+                            pagination={{
+                                clickable: true,
+                            }}
 
-                         // if width is 640px
-
-                        640: {
-                            slidesPerView:1,
-                            spaceBetween:10
-                        },
-
-                         // if width is 768px
-
-                        768: {
-                            slidesPerView:2,
-                            spaceBetween:10
-                        },
-
-                         // if width is 1024px
-
-                        1024: {
-                            slidesPerView:3,
-                            spaceBetween:10
-                        },
-
-                         // if width is 1440px
-
-                        1440: {
-                            slidesPerView:3,
-                            spaceBetween:10
-                        },
+                            breakpoints={{
 
 
 
-                    }}
+                                // if width is 640px
 
-                    modules={[FreeMode, Pagination, Navigation,Autoplay ]}
-                    className="mySwiper"
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                >
-                
-                    <SwiperSlide>
-                        <Image
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10
+                                },
 
-                            src={imagecaruse2}
-                            alt=''
-                            className=' h-60 w-full'
+                                // if width is 768px
 
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 10
+                                },
+
+                                // if width is 1024px
+
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 10
+                                },
+
+                                // if width is 1440px
+
+                                1440: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 10
+                                },
+
+
+
+                            }}
+
+                            modules={[FreeMode, Pagination, Navigation, Autoplay]}
+                            className="mySwiper"
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
                         >
+                            {
+                                Popular_Destination_Image.slice(-10).map((data, index) => (
+                                    <SwiperSlide key={data._id || index}>
+                                        <img
+                                            src={data.Choose_Image || 'Data Not Found'}
+                                            alt=''
+                                            className=' h-60 w-full'
+                                        >
+                                        </img>
+                                    </SwiperSlide>
+                                ))
+                            }
+                        </Swiper>
 
+                    ) : (
+                        <p>No Data found</p>
+                    )
+                }
 
-                        </Image>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image
-
-                            src={imagecaruse3}
-                            alt=''
-                            className=' h-60 w-full'
-
-                        >
-
-
-                        </Image>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image
-
-                            src={imagecaruse4}
-                            alt=''
-                            className=' h-60 w-full'
-
-                        >
-
-
-                        </Image>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image
-
-                            src={imagecaruse5}
-                            alt=''
-                            className=' h-60 w-full'
-
-                        >
-
-
-                        </Image>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image
-
-                            src={imagecaruse6}
-                            alt=''
-                            className=' h-60 w-full'
-
-                        >
-
-
-                        </Image>
-                    </SwiperSlide>
-                    
-
-
-                </Swiper>
             </div>
         </div>
     )
