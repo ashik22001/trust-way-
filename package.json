@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -30,7 +30,8 @@
     "react-icons": "^5.5.0",
     "sweetalert2": "^11.26.3",
     "swiper": "^12.0.2",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "lightningcss": "^1.27.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
