@@ -45,6 +45,12 @@ export default function Company_Founder_Table() {
 
 
 
+    // handle delete 
+
+    
+
+
+
 
 
     return (

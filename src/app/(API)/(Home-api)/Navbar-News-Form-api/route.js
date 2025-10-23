@@ -61,23 +61,34 @@ export async function PUT(req) {
 
 
 
+
 export async function DELETE(req) {
-    try {
-        const { searchParams } = new URL(req.url);
-        const id = searchParams.get('id');
+  try {
+    const { searchParams } = new URL(req.url);
+    const id = searchParams.get("id");
 
-        const dbcollection = await MongoDBConnection('Navbar_News_Form_Data');
-
-        const query = { _id: new ObjectId(id) };
-
-        const result = dbcollection.deleteOne(query);
-
-        if (result.deletedCount === 0) {
-            return NextResponse.json({ message: "No document found to delete" }, { status: 404 });
-        }
-        return NextResponse.json({ message: "Deleted successfully", deletedCount: result.deletedCount });
-
-    } catch (error) {
-        return NextResponse.json({ error: error.message }, { status: 500 });
+    if (!id) {
+      return NextResponse.json({ message: "ID is required" }, { status: 400 });
     }
+
+    const dbcollection = await MongoDBConnection("Navbar_News_Form_Data");
+
+    const query = { _id: new ObjectId(id) };
+    const result = await dbcollection.deleteOne(query); // ✅ Fixed: added await
+
+    if (result.deletedCount === 0) {
+      return NextResponse.json(
+        { message: "No document found to delete" },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json({
+      message: "Deleted successfully",
+      deletedCount: result.deletedCount,
+    });
+  } catch (error) {
+    console.error("DELETE API error:", error);
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
 }
