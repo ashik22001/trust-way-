@@ -8,9 +8,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-import imagecarusel from '../../../../../../public/Study_Visa_image/atiya.png'
-import imagecarusel1 from '../../../../../../public/Study_Visa_image/dowlet.png'
-import imagecarusel2 from '../../../../../../public/Study_Visa_image/abc.png'
+
 
 
 // import required modules
