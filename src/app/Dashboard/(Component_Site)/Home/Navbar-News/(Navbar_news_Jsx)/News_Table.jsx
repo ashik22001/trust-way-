@@ -16,6 +16,7 @@ import { FaRegEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
 import { TiPlus } from "react-icons/ti";
 import { useAuth } from "../../../../../../../Context/AuthContext/AuthContext"
+import Swal from "sweetalert2"
 
 
 
@@ -32,16 +33,60 @@ export default function News_Table() {
 
 
     React.useEffect(() => {
-  fetch('http://localhost:3000/Navbar-News-Form-api')
-    .then(res => res.json())
-    .then(data => {
-      setnavbar_news(data)
-    })
-}, []) // ✅ runs only once
+        fetch('http://localhost:3000/Navbar-News-Form-api')
+            .then(res => res.json())
+            .then(data => {
+                setnavbar_news(data)
+            })
+    }, []) // ✅ runs only once
 
 
 
     console.log('navbar data', navbar_news)
+
+
+
+
+
+    const handelDelete = async (id) => {
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then(async (result) => {
+    if (result.isConfirmed) {
+      try {
+        const res = await fetch(`http://localhost:3000/Navbar-News-Form-api?id=${id}`, {
+          method: "DELETE",
+        });
+
+        // safely handle non-JSON response
+        let resultData;
+        try {
+          resultData = await res.json();
+        } catch {
+          resultData = { error: "Invalid JSON response" };
+        }
+
+        if (res.ok) {
+          Swal.fire("Deleted!", "Your news item has been deleted.", "success");
+          setnavbar_news((prev) => prev.filter((item) => item._id !== id));
+        } else {
+          Swal.fire("Error", resultData.error || "Failed to delete", "error");
+        }
+
+      } catch (err) {
+        console.error("Delete failed:", err);
+        Swal.fire("Error", "Something went wrong", "error");
+      }
+    }
+  });
+};
+
 
 
 
@@ -97,10 +142,10 @@ export default function News_Table() {
                                         </Link>
                                     </TableCell>
                                     <TableCell className={'text-center'} >
-                                        <Link href="/">
-                                            <span className="flex items-center justify-center"><MdDeleteForever className="text-red-800 text-2xl" /></span>
+                                        
+                                            <p  className="flex items-center justify-center"><MdDeleteForever onClick={() => handelDelete(data._id)} className="text-red-800 text-2xl" /></p>
 
-                                        </Link>
+                                        
                                     </TableCell>
                                 </TableRow>
                             ))
