@@ -14,6 +14,7 @@ import europeimage from '../../../../../../public/work_visa_image/EU_bg.png'
 import flagimage from '../../../../../../public/work_visa_image/avstriaya.png'
 
 import { useAuth } from '../../../../../../Context/AuthContext/AuthContext'
+import Link from 'next/link'
 
 
 export default function Visa_available_country() {
@@ -71,32 +72,34 @@ export default function Visa_available_country() {
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 py-6 gap-x-5 gap-y-7'>
           {
             visa_condition_section.slice(-30).map((data, index) => (
-              <div key={data._id || index}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <div className="cursor-pointer">
-                      <div>
-                        <img
-                          src={data.Choose_Image}
-                          alt="Country flag"
-                          className="h-40 w-40 rounded-full object-cover mx-auto"
-                        />
+              <Link href={`/Work-Visa/${data._id}`}>
+                <div key={data._id || index} >
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div className="cursor-pointer">
+                        <div>
+                          <img
+                            src={data.Choose_Image}
+                            alt="Country flag"
+                            className="h-40 w-40 rounded-full object-cover mx-auto"
+                          />
+                        </div>
+                        <div className="border-b-2 border-[#727272] pb-2 mt-2">
+                          <Button className="bg-white text-xl font-semibold text-black w-full hover:text-white">
+                            {data.Country_Name}
+                          </Button>
+                        </div>
                       </div>
-                      <div className="border-b-2 border-[#727272] pb-2 mt-2">
-                        <Button className="bg-white text-xl font-semibold text-black w-full hover:text-white">
-                          {data.Country_Name}
-                        </Button>
-                      </div>
-                    </div>
-                  </TooltipTrigger>
+                    </TooltipTrigger>
 
-                  <TooltipContent className="h-60 w-80 bg-[#1917AA] mx-5 p-5 text-center flex items-center justify-center">
-                    <p className="text-sm font-semibold text-white">
-                     {data.Visa_Conditons}
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </div>
+                    <TooltipContent className="h-60 w-80 bg-[#1917AA] mx-5 p-5 text-center flex items-center justify-center">
+                      <p className="text-sm font-semibold text-white">
+                        {data.Visa_Conditons}
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </div>
+              </Link>
             ))
           }
 
