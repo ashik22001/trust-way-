@@ -15,12 +15,12 @@ export default function Page() {
     <div>
       <Work_Navbar></Work_Navbar>
       <Country_Wise_Visa_Details_Banner></Country_Wise_Visa_Details_Banner>
-      <Country_Wise_Visa_Details_Navbar></Country_Wise_Visa_Details_Navbar>
+      <Country_Wise_Visa_Details_Navbar ></Country_Wise_Visa_Details_Navbar>
 
 
-      <div className=' grid grid-cols-12 px-10 gap-x-10 pt-10'>
+      <div className=' grid md:grid-cols-12 px-5 md:px-10 gap-x-10 pt-10'>
         {/* left site  */}
-        <div className=' col-span-7'>
+        <div className=' md:col-span-7'>
 
           <Country_Wise_Visa_Details_Type_Of_Visa></Country_Wise_Visa_Details_Type_Of_Visa>
           <Country_Wise_Visa_Details_Abailable_Services></Country_Wise_Visa_Details_Abailable_Services>
@@ -30,7 +30,7 @@ export default function Page() {
         </div>
         {/* right site  */}
 
-        <div className=' col-span-5 pt-10'>
+        <div className=' md:col-span-5 pt-10'>
           <Country_Wise_Visa_Details_Start_application></Country_Wise_Visa_Details_Start_application>
         </div>
       </div>
