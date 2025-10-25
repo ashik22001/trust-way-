@@ -186,7 +186,7 @@ export default function Coutry_Visa_Conditions_Section_Form() {
           </div>
           <div className="  gap-3 mx-auto items-center justify-center mt-5">
             <Label htmlFor="picture" className={"text-[16px] font-semibold pb-3"}>Overview</Label>
-            <Textarea className={"h-60"} name='Visa_Conditons' placeholder="Visa Conditions" type="text" />
+            <Textarea className={"h-60"} name='Overview' placeholder="Overview" type="text" />
           </div>
 
 
@@ -204,13 +204,13 @@ export default function Coutry_Visa_Conditions_Section_Form() {
               {/* visa type title  */}
               <div className="  gap-3 mx-auto items-center justify-center">
                 <Label htmlFor="picture" className={"text-[16px] font-semibold pb-3"}>Visa Types Title  </Label>
-                <Input className={"h-14"} name='Country_Name' placeholder="Visa Types Title" type="text" />
+                <Input className={"h-14"} name='Visa_Types_Title' placeholder="Visa Types Title" type="text" />
               </div>
 
               {/* visa type overview  */}
               <div className="  gap-3 mx-auto items-center justify-center pt-5">
                 <Label htmlFor="picture" className={"text-[16px] font-semibold pb-3"}> Visa Type Overview</Label>
-                <Textarea className={"h-60"} name='Visa_Conditons' placeholder="Visa Type Overview" type="text" />
+                <Textarea className={"h-60"} name='Visa_Type_Overview' placeholder="Visa Type Overview" type="text" />
               </div>
 
 
@@ -248,7 +248,7 @@ export default function Coutry_Visa_Conditions_Section_Form() {
                       {/* visa type selected title  */}
                       <div className="  gap-3 mx-auto items-center justify-center mt-5">
                         <Label htmlFor="picture" className={"text-[16px] font-semibold pb-3"}>Visa type selected card title  </Label>
-                        <Input className={"h-14"} name='Country_Name' placeholder="Write Country Name" type="text" />
+                        <Input className={"h-14"} name='Visa_type_selected_card_title' placeholder="Visa type selected card title" type="text" />
                       </div>
                     </div>
                     {/* select visa type  */}
@@ -278,7 +278,7 @@ export default function Coutry_Visa_Conditions_Section_Form() {
                         </div>
                         <div className="  gap-3 mx-auto items-center justify-center mt-5">
                           <Label htmlFor="picture" className={"text-[16px] font-semibold pb-3"}>Visa type selected card list </Label>
-                          <Input className={"h-14"} name='Country_Name' placeholder="Write Country Name" type="text" />
+                          <Input className={"h-14"} name='Visa_type_selected_card_list' placeholder="Visa type selected card list" type="text" />
                         </div>
                       </div>
 
@@ -299,7 +299,7 @@ export default function Coutry_Visa_Conditions_Section_Form() {
                               </div>
                             </div>
                             <div className="  gap-3 mx-auto items-center justify-center mt-5">
-                              <Label htmlFor="picture" className={"text-[16px] font-semibold pb-3"}>Visa type selected card list </Label>
+                              <Label htmlFor="picture" className={"text-[16px] font-semibold pb-3"}>Visa type selected card list {index + 1} </Label>
                               <Input className={"h-14"} name='Country_Name' placeholder="Write Country Name" type="text" />
                             </div>
                           </div>
