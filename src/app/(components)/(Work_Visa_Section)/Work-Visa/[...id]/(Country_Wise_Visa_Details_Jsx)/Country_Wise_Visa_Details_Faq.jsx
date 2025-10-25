@@ -9,9 +9,9 @@ import {
 
 export default function Country_Wise_Visa_Details_Faq() {
   return (
-    <div className=' pt-10 mb-10'>
+    <div className=' pt-10 mb-10' id='Country_Wise_Visa_Details_Faq'>
 
-      <h1 className=' text-3xl font-semibold text-black leading-12'>FAQ for Andorra Visa</h1>
+      <h1 className=' text-2xl md:text-3xl font-bold text-black leading-8 md:leading-12 text-center md:text-left'>FAQ for Andorra Visa</h1>
 
 
 
@@ -25,7 +25,7 @@ export default function Country_Wise_Visa_Details_Faq() {
           defaultValue="item-1"
         >
           <AccordionItem value="item-1">
-            <AccordionTrigger className={ "text-2xl"}>Product Information</AccordionTrigger>
+            <AccordionTrigger className={ "text-xl md:text-2xl"}>Product Information</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
               <p>
                 Our flagship product combines cutting-edge technology with sleek
@@ -39,7 +39,7 @@ export default function Country_Wise_Visa_Details_Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger className={ "text-2xl"}>Shipping Details</AccordionTrigger>
+            <AccordionTrigger className={ "text-xl md:text-2xl"}>Shipping Details</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
               <p>
                 We offer worldwide shipping through trusted courier partners.
@@ -53,7 +53,7 @@ export default function Country_Wise_Visa_Details_Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger className={ "text-2xl"}>Return Policy</AccordionTrigger>
+            <AccordionTrigger className={ "text-xl md:text-2xl"}>Return Policy</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
               <p>
                 We stand behind our products with a comprehensive 30-day return

@@ -12,17 +12,17 @@ export default function Country_Wise_Visa_Details_Banner() {
   return (
     <div className='  bg-gradient-to-r from-[#1A4389] to-[#2661C7]  rounded-b-[50px]'>
 
-      <div className="bg-[url('/svg/banner_bg_pattern.svg')]  pb-6 w-full px-16 ">
-        <div className=' grid grid-cols-12 px-5 py-5 gap-x-5 items-center'>
+      <div className="bg-[url('/svg/banner_bg_pattern.svg')]  pb-6 w-full px-5 lg:px-10 xl:px-16 ">
+        <div className=' grid md:grid-cols-12 lg:px-5 py-5 md:gap-x-5 items-center'>
 
           {/* left site  */}
 
           <div className=' col-span-8'>
 
             {/* header title  */}
-            <h1 className='text-white text-3xl font-semibold pt-10'>Angola visa from Bangladesh</h1>
+            <h1 className='text-white text-2xl md:text-3xl font-bold pt-10 text-center md:text-left'>Angola visa from Bangladesh</h1>
 
-            <p className=' text-[16px] text-white pt-5'>
+            <p className='text-sm md:text-[16px] text-white pt-5 text-center md:text-left'>
               The Republic of Angola, one of Africa's seventh largest countries, is renowned for its safety and rich cultural heritage. Angola not only has a fertile landscape for farming, but it also has precious minerals such as diamonds, gold, oil mines, etc. The government of Angola is offering a variety of visa categories to attract foreigners. Because of the possible career opportunities, people are also interested in Angola. Without an Angola visa from Bangladesh, you won't be able to enter Angola.
 
               However, Bangladesh doesn’t have an embassy of Angola in Dhaka. So, how to apply for the Angola visa? Bangladeshi citizens who are interested in attaining an Angola visa need to visit the Angola Embassy in New Delhi, India. Please refer to the article below for more information about Angola from VISAThing.
@@ -30,21 +30,23 @@ export default function Country_Wise_Visa_Details_Banner() {
 
             {/* button section  */}
 
-            <div className=' flex gap-x-10 pt-10'>
+            <div className='   flex items-center justify-center md:flex-none md:items-start md:justify-start'>
+              <div className=' md:flex space-y-5 md:gap-x-10 pt-10  '>
               <div>
-                <Button className="bg-white text-sm text-black h-12 hover:text-white hover:bg-[#2F3268]"> <span className=' text-[#0BA5EC] text-5xl'><GiIndianPalace /> </span>Embassy Details</Button>
+                <Button className="bg-white text-sm text-black h-12 hover:text-white hover:bg-[#2F3268] w-full"> <span className=' text-[#0BA5EC] text-5xl'><GiIndianPalace /> </span>Embassy Details</Button>
               </div>
               <div>
-                <Button className="bg-[#2F3268] text-sm text-white h-12  hover:bg-white hover:text-black"> <span className=' text-[#0BA5EC] text-5xl'><FaCalendarAlt /> </span>Book an appointment</Button>
+                <Button className="bg-[#2F3268] text-sm text-white h-12  hover:bg-white hover:text-black w-full"> <span className=' text-[#0BA5EC] text-5xl'><FaCalendarAlt /> </span>Book an appointment</Button>
 
               </div>
+            </div>
             </div>
           </div>
 
 
           {/* right site  */}
 
-          <div className=' col-span-4'>
+          <div className=' col-span-4 hidden md:block'>
 
             <Image
             

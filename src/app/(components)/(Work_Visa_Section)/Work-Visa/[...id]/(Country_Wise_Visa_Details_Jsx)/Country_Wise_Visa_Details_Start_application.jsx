@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Country_Wise_Visa_Details_Start_application() {
     return (
-        <div className=' space-y-5'>
+        <div className=' space-y-5 mb-14 lg:mb-0'>
             <div className='  w-full rounded-2xl '>
                 <div className=' p-2 text-center bg-[#2E90FA] rounded-t-2xl'>
                     <h4 className=' font-semibold text-[#CBDBF1]'>Calculate Your</h4>
