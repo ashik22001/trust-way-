@@ -13,7 +13,7 @@ export default function Page() {
     <div>
         <Work_Navbar></Work_Navbar>
         <Banner_Video></Banner_Video>
-        <Banner_Section></Banner_Section>
+        <Banner_Section></Banner_Section> 
         <Our_Service_section></Our_Service_section>
         <Popular_Place_Swiper></Popular_Place_Swiper>
         <Country_Card></Country_Card>

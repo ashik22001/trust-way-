@@ -66,7 +66,7 @@ export default function Swiper_image_section() {
 
 
     return (
-        <div>
+        <div className='max-w-[1536px] mx-auto'>
             {/* text  section */}
 
             <div className='  '>

@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 export default function Country_Wise_Visa_Details_Banner() {
   return (
-    <div className='  bg-gradient-to-r from-[#1A4389] to-[#2661C7]  rounded-b-[50px]'>
+    <div className='  bg-gradient-to-r from-[#1A4389] to-[#2661C7]  rounded-b-[50px] max-w-[1536px] mx-auto'>
 
       <div className="bg-[url('/svg/banner_bg_pattern.svg')]  pb-6 w-full px-5 lg:px-10 xl:px-16 ">
         <div className=' grid md:grid-cols-12 lg:px-5 py-5 md:gap-x-5 items-center'>

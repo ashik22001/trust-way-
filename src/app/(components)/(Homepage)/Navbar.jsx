@@ -48,7 +48,8 @@ export default function Navbar() {
 
   return (
     // ✅ Added top-0, z-50, and shadow for better sticky effect
-    <div className="bg-black sticky top-0 z-50 shadow-md">
+   <div className='bg-black  max-w-[1536px] mx-auto'>
+     <div className=" sticky top-0 z-50 shadow-md">
 
       {/* Navbar main container */}
       <div className="grid grid-cols-2 lg:grid-cols-12 items-center justify-between px-5 py-4">
@@ -84,21 +85,24 @@ export default function Navbar() {
 
       {/* navbar ul section */}
       <div className=' hidden lg:block'>
-        <ul className="text-lg font-semibold text-white grid grid-cols-6 px-2 text-center py-2 items-center justify-center">
+        <ul className="text-lg font-semibold text-white grid grid-cols-3 px-2 text-center py-2 items-center justify-center">
           <li className="border-r-2 border-white h-4 flex items-center justify-center px-5">
             <Link href="/Work-Visa" className="text-white hover:text-blue-300">
               Work Visa
             </Link>
           </li>
-          <li className="border-r-2 border-white h-4 flex items-center justify-center px-5">Tourist Visa</li>
           <li className="border-r-2 border-white h-4 flex items-center justify-center px-5">
+            <Link href="/Turist-Visa" className="text-white hover:text-blue-300">
+              Tourist Visa
+            </Link>
+            
+            </li>
+          <li className=" border-white h-4 flex items-center justify-center px-5">
             <Link href="/Study-Visa" className="text-white hover:text-blue-300">
               Study Visa
             </Link>
           </li>
-          <li className="border-r-2 border-white h-4 flex items-center justify-center px-5">Legalization in Bangladesh</li>
-          <li className="border-r-2 border-white h-4 flex items-center justify-center px-5">Appointment in Global</li>
-          <li>Tunkey Visa in Bangladesh</li>
+          
         </ul>
       </div>
 
@@ -119,20 +123,14 @@ export default function Navbar() {
                 Study Visa
               </Link>
             </li>
-            <li className='text-xl font-semibold text-white px-3 border-b border-white py-2'>
-              Legalization in Bangladesh
-            </li>
-            <li className='text-xl font-semibold text-white px-3 border-b border-white py-2'>
-              Appointment in Global
-            </li>
-            <li className='text-xl font-semibold text-white px-3 border-b border-white py-2'>
-              Tunkey Visa in Bangladesh
-            </li>
-
+           
+         
+           
           </ul>
         </div>
       )}
 
     </div>
+   </div>
   )
 }

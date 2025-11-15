@@ -4,7 +4,7 @@ import { FaDotCircle } from "react-icons/fa";
 
 export default function Country_Wise_Visa_Details_Type_Of_Visa() {
   return (
-    <div className=' pt-10 ' id='Country_Wise_Visa_Details_Type_Of_Visa'>
+    <div className=' pt-10 ' id='Country_Wise_Visa_Details_Type_Of_Visa '>
 
       <h1 className=' text-2xl md:text-3xl text-center md:text-left font-bold text-black leading-8 md:leading-12'>Different Types of Visa Options for Bangladeshi Citizens to Travel to Angola</h1>
 

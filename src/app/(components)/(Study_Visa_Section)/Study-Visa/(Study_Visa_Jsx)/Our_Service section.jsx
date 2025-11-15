@@ -30,29 +30,31 @@ export default function Our_Service_section() {
 
     return (
         <div className=' bg-white py-5 pb-8'>
+            <div className=' max-w-[1536px] mx-auto'>
 
 
-            {/* header title  */}
+                {/* header title  */}
 
-            <h3 className='text-center font-semibold text-4xl text-[#110078] py-3 pb-5'>OUR SERVICES </h3>
+                <h3 className='text-center font-semibold text-4xl text-[#110078] py-3 pb-5'>OUR SERVICES </h3>
 
-            {/* card section  */}
+                {/* card section  */}
 
-            <div className=' px-5 md:px-[10%] grid  lg:grid-cols-3 gap-x-5 gap-y-5'>
-                {
-                    Study_Our_Service_Card.slice(-6).map((data, index) => (
-                        <div className=' bg-white rounded-2xl shadow-lg shadow-gray-500 ' key={data?._id || index }>
-                            <h3 className='text-center font-bold text-2xl text-[#110078] pt-3'>{data?.Service_Title || 'No Data Found'}</h3>
-                            <p className=' text-lg py-5 px-6 text-center'>
-                               {data?.Service_Description || 'No Data Found'}
-                            </p>
-                        </div>
+                <div className=' px-5 md:px-[10%] grid  lg:grid-cols-3 gap-x-5 gap-y-5'>
+                    {
+                        Study_Our_Service_Card.slice(-6).map((data, index) => (
+                            <div className=' bg-white rounded-2xl shadow-lg shadow-gray-500 ' key={data?._id || index}>
+                                <h3 className='text-center font-bold text-2xl text-[#110078] pt-3'>{data?.Service_Title || 'No Data Found'}</h3>
+                                <p className=' text-lg py-5 px-6 text-center'>
+                                    {data?.Service_Description || 'No Data Found'}
+                                </p>
+                            </div>
 
-                    ))
-                }
+                        ))
+                    }
 
-               
 
+
+                </div>
             </div>
         </div>
     )

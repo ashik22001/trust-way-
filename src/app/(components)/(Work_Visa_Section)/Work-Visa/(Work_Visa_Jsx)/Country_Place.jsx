@@ -16,7 +16,7 @@ export default function Country_Place() {
     return (
 
 
-        <div>
+        <div className='max-w-[1536px] mx-auto'>
             <div className='bg-[#DBFFD4] w-full py-10 px-5 md:px-0  lg:px-[10%] relative '>
                 {/* section 1 */}
                  <div className=' flex md:grid md:grid-cols-12 items-center gap-0 lg:gap-10 flex-col-reverse'>

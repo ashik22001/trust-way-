@@ -6,7 +6,7 @@ import meghmiddleimage from '../../../../../public/images/oblako_2.jpeg'
 
 export default function Banner_section_2() {
   return (
-    <div className="relative">
+    <div className="relative max-w-[1536px] mx-auto">
       {/* text section div */}
       <div className="py-4 bg-white text-center leading-8 absolute top-0 left-0 w-full z-20">
         <h3 className=" text-sm  md:text-xl lg:text-2xl font-semibold px-5 md:px-10 text-[#010053]">

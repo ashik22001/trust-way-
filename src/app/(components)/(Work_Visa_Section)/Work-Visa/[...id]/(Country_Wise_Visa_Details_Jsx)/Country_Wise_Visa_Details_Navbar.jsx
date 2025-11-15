@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Country_Wise_Visa_Details_Navbar() {
   return (
-    <div className="sticky top-0 z-50 bg-white hidden md:block">
+    <div className="sticky top-0 z-50 bg-white hidden md:block max-w-[1536px] mx-auto">
       <ul className="flex flex-wrap gap-5 items-center justify-center py-4 ">
         <Link href="#Country_Wise_Visa_Details_Type_Of_Visa" scroll={true}>
           <li className="border-r-2 px-3 text-[16px] font-semibold cursor-pointer">Type of Visa</li>

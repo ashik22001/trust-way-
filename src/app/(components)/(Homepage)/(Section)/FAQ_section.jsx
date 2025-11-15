@@ -35,7 +35,7 @@ export default function FAQ_section() {
   console.log('our_faq_section', our_faq_section)
 
   return (
-    <div>
+    <div className=' max-w-[1536px] mx-auto'>
       {/* header text section  */}
       <div>
         <h1 className=' text-7xl font-[600] text-center text-[#495F77]  px-16 pb-4 pt-6'>

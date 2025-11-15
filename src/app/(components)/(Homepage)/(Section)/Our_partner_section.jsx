@@ -17,7 +17,7 @@ export default function Our_partner_section() {
     
 
     return (
-        <div className='px-5  md:px-10 pt-5 rounded-5xl'>
+        <div className='px-5  md:px-10 pt-5 rounded-5xl max-w-[1536px] mx-auto'>
             <div className='bg-[url(/images/partners.jpg)]  w-full bg-cover bg-center rounded-4xl'>
                 <div>
                     <div className='grid items-center justify-center py-10 gap-y-3'>

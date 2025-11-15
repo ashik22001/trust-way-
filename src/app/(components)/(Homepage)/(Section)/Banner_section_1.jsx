@@ -18,7 +18,7 @@ export default function Banner_section_1() {
 
 
   return (
-    <div className='bg-[url(/images/layer-1.webp)] h-full w-full bg-cover bg-center'>
+    <div className='bg-[url(/images/layer-1.webp)] h-full w-full bg-cover bg-center  max-w-[1536px] mx-auto'>
       <div className='bg-[url(/images/layer-2.webp)] h-[400px] md:h-[450px] lg:h-[550px] w-full bg-cover bg-center'>
         {/* text section */}
         <div>

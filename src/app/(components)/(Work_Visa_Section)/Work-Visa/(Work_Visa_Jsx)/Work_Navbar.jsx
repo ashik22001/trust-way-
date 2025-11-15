@@ -15,7 +15,8 @@ export default function Work_Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <div>
+        <div className='bg-white'>
+            <div className=' max-w-[1536px] mx-auto'>
             {/* part one (top contact bar) */}
             <div className='hidden md:block'>
                 <div className='bg-black text-white px-5 md:flex md:items-center md:justify-between'>
@@ -67,9 +68,7 @@ export default function Work_Navbar() {
                                     Study visas
                                 </Link>
                             </li>
-                            <li className='text-lg font-[400] text-black'>Legalization</li>
-                            <li className='text-lg font-[400] text-black'>VFS Global</li>
-                            <li className='text-lg font-[400] text-black'>Visas for Belarus</li>
+                           
                         </ul>
                     </div>
 
@@ -132,6 +131,7 @@ export default function Work_Navbar() {
                     </h4>
                 </Marquee>
             </div>
+        </div>
         </div>
     )
 }

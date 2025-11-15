@@ -8,12 +8,6 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-import imagecaruse1 from '../../../../../../public/Study_Visa_image/EU_bg (1).png'
-import imagecaruse2 from '../../../../../../public/Study_Visa_image/avstriaya (1).jpg'
-import imagecaruse3 from '../../../../../../public/Study_Visa_image/belgiaya (1).jpg'
-import imagecaruse4 from '../../../../../../public/Study_Visa_image/bolgariya.jpg'
-import imagecaruse5 from '../../../../../../public/Study_Visa_image/daniaya.jpg'
-import imagecaruse6 from '../../../../../../public/Study_Visa_image/kipr (1).jpg'
 
 
 // import required modules
@@ -49,7 +43,8 @@ export default function Popular_Place_Swiper() {
     console.log('Popular_Destination_Image', Popular_Destination_Image)
 
     return (
-        <div className='bg-gradient-to-r from-[#040A63] to-[#2860A2] '>
+       <div className='bg-gradient-to-r from-[#040A63] to-[#2860A2] '>
+         <div  className=' max-w-[1536px] mx-auto'>
             {/* header text  */}
 
             <div>
@@ -134,5 +129,6 @@ export default function Popular_Place_Swiper() {
 
             </div>
         </div>
+       </div>
     )
 }

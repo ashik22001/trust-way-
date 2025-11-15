@@ -13,9 +13,9 @@ import FAQ_section from "./(components)/(Homepage)/(Section)/FAQ_section";
 import Home_Footer from "./(components)/(Homepage)/Home_Footer";
 
 export default function Home() {
-  return (
+  return ( 
    <div>
-    <Navbar></Navbar>
+    <Navbar ></Navbar>
     <Banner_section_1></Banner_section_1>
     <Banner_section_2></Banner_section_2>
     <Banner_section_3></Banner_section_3>

@@ -5,7 +5,7 @@ import { MdOutlineMessage } from "react-icons/md";
 
 export default function Country_Wise_Visa_Details_Abailable_Services() {
   return (
-    <div className=' pt-10 ' id="Country_Wise_Visa_Details_Abailable_Services">
+    <div className=' pt-10 ' id="Country_Wise_Visa_Details_Abailable_Services ">
 
       <h1 className='text-2xl md:text-3xl font-bold text-black leading-8 md:leading-12 text-center md:text-left'>Services Bangladeshi People Can Take for Angola Visa from VISAThing</h1>
 

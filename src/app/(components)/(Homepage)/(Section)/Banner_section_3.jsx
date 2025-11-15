@@ -17,7 +17,7 @@ export default function Banner_section_3() {
       }, []);
 
     return (
-        <div className="px-0 md:px-5 lg:px-10">
+        <div className="px-0 md:px-5 lg:px-10 max-w-[1536px] mx-auto">
 
             {/* background image */}
             <div className="bg-[url(/images/oblaka.webp)] h-full md:h-full lg:h-full w-full bg-cover bg-center rounded-none md:rounded-[50px] mt-0 xl:mt-10">

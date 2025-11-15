@@ -45,7 +45,8 @@ export default function About_Us_Carusel() {
     console.log('About_Say', About_Say)
 
     return (
-        <div className='bg-gradient-to-r from-[#040A63] to-[#2860A2] '>
+       <div className='bg-gradient-to-r from-[#040A63] to-[#2860A2]'>
+         <div className='max-w-[1536px] mx-auto '>
             {/* header text  */}
 
             <div>
@@ -164,5 +165,6 @@ export default function About_Us_Carusel() {
 
             </div>
         </div>
+       </div>
     )
 }

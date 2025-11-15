@@ -5,7 +5,8 @@ import logo from '../../../../../../public/images/trust_logo.png'
 
 export default function Banner_Video() {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className=' max-w-[1536px] mx-auto'>
+      <div className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -37,6 +38,7 @@ export default function Banner_Video() {
 
         </p>
       </div>
+    </div>
     </div>
   )
 }

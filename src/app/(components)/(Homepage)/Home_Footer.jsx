@@ -8,7 +8,8 @@ import { AiFillTikTok } from "react-icons/ai";
 
 export default function Home_Footer() {
     return (
-        <div className=' bg-black'>
+       <div className='bg-black'>
+         <div className='  max-w-[1536px] mx-auto'>
 
             {/* footer first part  */}
 
@@ -18,7 +19,6 @@ export default function Home_Footer() {
                     {/* logo section */}
                     <div className='- flex items-center justify-center'>
                         <Image
-
                             src={logo}
                             className='h-16 w-40'
                             alt='image logo'
@@ -142,5 +142,6 @@ export default function Home_Footer() {
 
 
         </div>
+       </div>
     )
 }

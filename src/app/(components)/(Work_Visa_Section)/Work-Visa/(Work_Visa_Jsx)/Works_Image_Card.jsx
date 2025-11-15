@@ -32,7 +32,8 @@ export default function Works_Image_Card() {
 
 
     return (
-        <div className=' bg-black'>
+     <div className=' bg-black'>
+           <div className=' max-w-[1536px] mx-auto'>
 
 
             {/* header text  */}
@@ -67,5 +68,6 @@ export default function Works_Image_Card() {
                 <h1 className=' text-xl font-medium text-white py-5 text-center '>For current vacancies for each country, please check here: Facebook</h1>
             </div>
         </div>
+     </div>
     )
 }

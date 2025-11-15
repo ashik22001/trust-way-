@@ -11,7 +11,8 @@ import { Button } from '@/components/ui/button'
 
 export default function Banner_Section() {
     return (
-        <div className='  w-full bg-[#FFFFFF] grid md:grid-cols-2 items-center justify-center px-5  md:px-10 py-3'>
+      <div className='bg-[#FFFFFF]'>
+          <div className=' max-w-[1536px] mx-auto w-full grid md:grid-cols-2 items-center justify-center px-5  md:px-10 py-3'>
 
             {/* left section  */}
 
@@ -19,12 +20,12 @@ export default function Banner_Section() {
                 <Image
 
                     src={menimage}
-alt='image1'
+                    alt='image1'
                     className=' h-[550px]'
 
                 >
                 </Image>
-            </div> 
+            </div>
 
             {/* right section  */}
 
@@ -42,17 +43,18 @@ alt='image1'
                 </div>
 
                 <div className=' flex items-center justify-center py-4'>
-                     <Image
+                    <Image
 
-                    src={imageversity}
-                    alt='image1'
-                    className=' h-36 w-60 rounded-4xl'
+                        src={imageversity}
+                        alt='image1'
+                        className=' h-36 w-60 rounded-4xl'
 
-                >
+                    >
 
-                </Image>
+                    </Image>
                 </div>
             </div>
         </div>
+      </div>
     )
 }

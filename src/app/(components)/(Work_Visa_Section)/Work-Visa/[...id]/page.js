@@ -9,7 +9,7 @@ import Country_Wise_Visa_Details_Time_And_Fees from './(Country_Wise_Visa_Detail
 import Country_Wise_Visa_Details_Faq from './(Country_Wise_Visa_Details_Jsx)/Country_Wise_Visa_Details_Faq'
 import Work_Visa_Footer from '../(Work_Visa_Jsx)/Work_Visa_Footer'
 import Country_Wise_Visa_Details_Start_application from './(Country_Wise_Visa_Details_Jsx)/Country_Wise_Visa_Details_Start_application'
-
+ 
 export default function Page() {
   return (
     <div>
@@ -18,7 +18,7 @@ export default function Page() {
       <Country_Wise_Visa_Details_Navbar ></Country_Wise_Visa_Details_Navbar>
 
 
-      <div className=' grid md:grid-cols-12 px-5 md:px-10 gap-x-10 pt-10'>
+      <div className=' grid md:grid-cols-12 px-5 md:px-10 gap-x-10 pt-10 max-w-[1536px] mx-auto'>
         {/* left site  */}
         <div className=' md:col-span-7'>
 

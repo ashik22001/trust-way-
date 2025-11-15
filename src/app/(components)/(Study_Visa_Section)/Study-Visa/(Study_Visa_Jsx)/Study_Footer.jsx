@@ -13,10 +13,10 @@ import { Link } from 'lucide-react';
 
 export default function Study_Footer() {
     return (
-        <div>
+        <div className='bg-[#150047]'>
             {/* footer first section  */}
 
-            <div className='bg-[#150047]'>
+            <div className='max-w-[1536px] mx-auto'>
                 {/* footer  part 1 */}
                 <div className='   grid md:grid-cols-4 lg:grid-cols-5 px-5 md:px-10 lg:px-14 xl:px-20 py-5 border-b-2 border-[#8A80A3] gap-x-10'>
 

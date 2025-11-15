@@ -47,7 +47,7 @@ export default function Work_result_image_section() {
 
 
     return (
-        <div >
+        <div  className='max-w-[1536px] mx-auto'>
 
 
             {/* header text seciton */}

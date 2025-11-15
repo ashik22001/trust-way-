@@ -29,7 +29,7 @@ export default function Service_Section() {
 
 
     return (
-        <div >
+        <div className='max-w-[1536px] mx-auto'>
 
             {/* background image */}
             <div className="bg-[url(/images/book_mockup_2.webp)]  w-full bg-cover bg-center ">

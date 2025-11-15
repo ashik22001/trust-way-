@@ -58,7 +58,7 @@ export default function Country_Category() {
 
 
       {/* pegination button section  */}
-      <div className=' relative'>
+      <div className=' relative max-w-[1536px] mx-auto'>
         <div className=' flex items-center justify-between px-10 pt-10 '>
           <div className='swiper-button-prev-custom'>
             <FaArrowCircleLeft className=' text-4xl ' />
